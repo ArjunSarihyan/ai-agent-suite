@@ -1,0 +1,28 @@
+[project]
+name = "customer-support-bot"
+version = "0.1.0"
+description = "A chatbot for handling customer support using CrewAI"
+authors = [
+    { name = "Your Name", email = "you@example.com" },
+]
+requires-python = ">=3.10,<=3.13"
+dependencies = [
+    "crewai[tools]>=0.76.2",
+    "langchain-core>=0.2.30",
+]
+
+[project.scripts]
+customer_support = "customer_support_bot.main:run"
+run_crew = "customer_support_bot.main:run"
+train = "customer_support_bot.main:train"
+replay = "customer_support_bot.main:replay"
+test = "customer_support_bot.main:test"
+
+[build-system]
+requires = [
+    "hatchling",
+]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/customer_support_bot"]

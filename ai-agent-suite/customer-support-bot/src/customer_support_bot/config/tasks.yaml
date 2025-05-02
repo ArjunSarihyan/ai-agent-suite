@@ -1,0 +1,53 @@
+customer_support_research_task:
+  description: >
+    Investigate the customer's issue by gathering necessary details to address their concerns.
+    Ask probing questions to extract essential information such as order numbers, the issue faced,
+    customer account details, and any other relevant context that will help in resolving the issue.
+    This task aims to ensure the support agent has a clear understanding of the customer's situation.
+  assigned_to: customer_support_researcher
+  expected_output: >
+    A detailed summary of the customer's issue, including:
+    1. Order number or account number (if applicable)
+    2. Type of issue (e.g., delivery delay, technical problem, refund request)
+    3. Any additional context or details provided by the customer
+    4. Probing questions or clarifications that might be needed before resolving the issue
+
+package_tracking_task:
+  description: >
+    Focus specifically on tracking packages. This includes validating the tracking number,
+    checking delivery status, and identifying any potential issues with the shipment.
+    The goal is to assist the customer in tracking their package and addressing any delivery-related concerns.
+  assigned_to: package_tracker
+  expected_output: >
+    A detailed status update on the package's delivery, including:
+    1. Tracking number verification
+    2. Current delivery status
+    3. Any issues with the delivery (e.g., delays, lost package)
+    4. Next steps or follow-up actions needed
+
+solution_suggestion_task:
+  description: >
+    Analyze the details of the customer's issue and suggest an appropriate solution based on the context.
+    The solution could include providing troubleshooting steps, answering customer queries, offering discounts or compensation,
+    or escalating the issue to a human agent if it is beyond the scope of automated support.
+  assigned_to: solution_suggester
+  expected_output: >
+    A list of suggested solutions, which may include:
+    1. Troubleshooting steps for technical issues
+    2. Information or instructions on how to resolve common customer inquiries
+    3. Any escalations needed to a higher level of support (e.g., human agent involvement)
+    4. A suggested response to the customer (including empathy and assurance)
+
+craft_chat_response_task:
+  description: >
+    Based on the gathered information and suggested solution, craft a clear, polite, and helpful response
+    to the customer via chat. The response should address their concerns directly, guide them toward the solution,
+    and maintain a friendly and professional tone. The response should also include any necessary follow-up actions.
+  assigned_to: chat_copywriter
+  expected_output: >
+    A well-structured, empathetic, and clear chat response, which includes:
+    1. A greeting and acknowledgment of the customer's issue
+    2. A concise explanation of the next steps or troubleshooting process
+    3. An empathetic tone to reassure the customer that their issue is being handled
+    4. A closing with options for further assistance or follow-up
+    5. Any follow-up questions or requests for additional information (if necessary)

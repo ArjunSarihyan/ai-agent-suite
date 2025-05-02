@@ -1,0 +1,42 @@
+# src/publisher/config/tasks.yaml
+
+crawler_task:
+  description: >
+    Search for and collect the latest and most relevant articles on the topic "{topic}" using the Serper API.
+    Focus on obtaining complete metadata, including article title, author, publication date, and URL.
+    Ensure the articles are trustworthy, recent (preferably within the current year: {current_year}), and from reputable publishers.
+  expected_output: >
+    A structured list of 5–10 articles with metadata:
+    - Title
+    - Author
+    - Publication Date
+    - URL
+  agent: crawler_agent
+
+simulation_task:
+  description: >
+    For each article collected in the crawling phase, simulate GPT-4o-mini-based queries and generate interpretive summaries.
+    These summaries should answer the question: "What would a user or researcher want to understand from this article?"
+    Maintain links to the original article and highlight the relevance to the topic "{topic}".
+  expected_output: >
+    A JSON-like structure with:
+    - Article title
+    - Simulated AI interpretation (2–3 sentences)
+    - Citation (author, year, and URL)
+  agent: simulation_agent
+
+summarization_task:
+  description: >
+    Using the AI interpretations and article metadata, generate polished, markdown-formatted summaries for publication.
+    Each entry should include a clear heading, full citation, and a concise summary of the article's main points related to "{topic}".
+    Format for markdown publication in `summaries.md`.
+  expected_output: >
+    A markdown document where each article has the following structure:
+    
+    1. **Article Summary for "<Article Title>"**  
+       **Citation**: <Author>, <Year>. <Title>. Retrieved from <URL>  
+       **AI Interpretation**: <2–3 sentence summary>
+    
+    Include summaries for all relevant articles found during crawling.
+  agent: summarization_agent
+  output_file: summaries.md
