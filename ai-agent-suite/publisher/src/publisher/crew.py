@@ -5,12 +5,10 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 import yaml
 
-# Define the Publisher Crew
 @CrewBase
 class Publisher():
     """Publisher crew"""
 
-    # Path to agent and task config files
     agents_config_path = 'src/publisher/config/agents.yaml'
     tasks_config_path = 'src/publisher/config/tasks.yaml'
 
@@ -18,7 +16,7 @@ class Publisher():
         self.topic = topic
         self.current_year = datetime.datetime.now().year
 
-        # Load and format YAML config files with topic substitution
+        # Load and format YAML config files
         with open(self.agents_config_path, 'r') as f:
             raw_agents = yaml.safe_load(f)
             self.agents_config = {
@@ -33,10 +31,14 @@ class Publisher():
                 for k, v in raw_tasks.items()
             }
 
-    # Define agents
+    # Agents
     @agent
     def crawler_agent(self) -> Agent:
         return Agent(config=self.agents_config['crawler_agent'], verbose=True)
+
+    @agent
+    def role_generator(self) -> Agent:
+        return Agent(config=self.agents_config['role_generator'], verbose=True)
 
     @agent
     def simulation_agent(self) -> Agent:
@@ -46,10 +48,14 @@ class Publisher():
     def summarization_agent(self) -> Agent:
         return Agent(config=self.agents_config['summarization_agent'], verbose=True)
 
-    # Define tasks
+    # Tasks
     @task
     def crawler_task(self) -> Task:
         return Task(config=self.tasks_config['crawler_task'])
+
+    @task
+    def role_generation_task(self) -> Task:
+        return Task(config=self.tasks_config['role_generation_task'])
 
     @task
     def simulation_task(self) -> Task:
@@ -59,7 +65,7 @@ class Publisher():
     def summarization_task(self) -> Task:
         return Task(config=self.tasks_config['summarization_task'], output_file='summaries.md')
 
-    # Create Crew
+    # Crew definition
     @crew
     def crew(self) -> Crew:
         return Crew(

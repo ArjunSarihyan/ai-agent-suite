@@ -13,30 +13,41 @@ crawler_task:
     - URL
   agent: crawler_agent
 
-simulation_task:
+role_generation_task:
   description: >
-    For each article collected in the crawling phase, simulate GPT-4o-mini-based queries and generate interpretive summaries.
-    These summaries should answer the question: "What would a user or researcher want to understand from this article?"
-    Maintain links to the original article and highlight the relevance to the topic "{topic}".
+    Analyze each article and determine a suitable persona or role the simulation agent should adopt when reading and interpreting the content.
+    Roles can be "student", "journalist", "policy maker", etc., depending on article context and tone.
   expected_output: >
     A JSON-like structure with:
     - Article title
-    - Simulated AI interpretation (2–3 sentences)
+    - Suggested role
+    - Reason for the role
+  agent: role_generator
+
+simulation_task:
+  description: >
+    For each article, simulate how a user with the assigned role would interpret the content. Generate a realistic prompt and a 2–3 sentence interpretation.
+  expected_output: >
+    A JSON-like structure with:
+    - Article title
+    - Assigned role
+    - Simulated prompt
+    - AI interpretation (2–3 sentences)
     - Citation (author, year, and URL)
   agent: simulation_agent
 
 summarization_task:
   description: >
-    Using the AI interpretations and article metadata, generate polished, markdown-formatted summaries for publication.
-    Each entry should include a clear heading, full citation, and a concise summary of the article's main points related to "{topic}".
-    Format for markdown publication in `summaries.md`.
+    Using the AI interpretations, simulated prompts, and article metadata, generate polished, markdown-formatted summaries for publication.
+    Each summary should not only capture the main points of the article but also include a realistic answer to the simulated prompt, derived from the article’s insights and role-specific interpretation.
   expected_output: >
     A markdown document where each article has the following structure:
-    
-    1. **Article Summary for "<Article Title>"**  
-       **Citation**: <Author>, <Year>. <Title>. Retrieved from <URL>  
-       **AI Interpretation**: <2–3 sentence summary>
-    
-    Include summaries for all relevant articles found during crawling.
+
+    # Article Summary for "<Article Title>"  
+    **Citation**: <Author>, <Year>. <Title>. Retrieved from <URL>  
+    **Role**: <Assigned Role>  
+    **Simulated Prompt**: <Prompt used for interpretation>  
+    **AI Interpretation**: <2–3 sentence summary>  
+    **Prompt Answer**: <Direct answer to the simulated prompt. 2 paragraphs>
   agent: summarization_agent
   output_file: summaries.md
