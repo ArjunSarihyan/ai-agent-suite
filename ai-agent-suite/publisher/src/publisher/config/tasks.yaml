@@ -2,11 +2,10 @@
 
 crawler_task:
   description: >
-    Search for and collect the latest and most relevant articles on the topic "{topic}" using the Serper API.
-    Focus on obtaining complete metadata, including article title, author, publication date, and URL.
-    Ensure the articles are trustworthy, recent (preferably within the current year: {current_year}), and from reputable publishers.
+    Use the Serper API to search and collect 5–10 recent articles mentioning "{topic}" or its competitors.
+    Ensure results are from credible media outlets and dated within the current year: {current_year}.
   expected_output: >
-    A structured list of 5–10 articles with metadata:
+    A structured list of articles with:
     - Title
     - Author
     - Publication Date
@@ -15,39 +14,42 @@ crawler_task:
 
 role_generation_task:
   description: >
-    Analyze each article and determine a suitable persona or role the simulation agent should adopt when reading and interpreting the content.
-    Roles can be "student", "journalist", "policy maker", etc., depending on article context and tone.
+    Analyze each article’s content and tone to assign a relevant perspective (consumer, journalist, investor, etc.) for simulation.
   expected_output: >
-    A JSON-like structure with:
+    JSON-like structure with:
     - Article title
     - Suggested role
-    - Reason for the role
+    - Reason for selection
   agent: role_generator
 
 simulation_task:
   description: >
-    For each article, simulate how a user with the assigned role would interpret the content. Generate a realistic prompt and a 2–3 sentence interpretation.
+    For each article, simulate how a user with the assigned role would interpret the content.
+    Generate a realistic prompt, a 2–3 sentence interpretation, and assess sentiment from the role’s perspective.
   expected_output: >
     A JSON-like structure with:
     - Article title
     - Assigned role
     - Simulated prompt
     - AI interpretation (2–3 sentences)
+    - Sentiment (positive, negative, neutral)
     - Citation (author, year, and URL)
   agent: simulation_agent
 
 summarization_task:
   description: >
-    Using the AI interpretations, simulated prompts, and article metadata, generate polished, markdown-formatted summaries for publication.
-    Each summary should not only capture the main points of the article but also include a realistic answer to the simulated prompt, derived from the article’s insights and role-specific interpretation.
+    Create PR-ready markdown summaries per article using the stakeholder’s interpretation and article metadata.
+    Include realistic responses to simulated prompts and note any PR risks or reputation signals.
   expected_output: >
-    A markdown document where each article has the following structure:
-
-    # Article Summary for "<Article Title>"  
+    Markdown summary for each article:
+    
+    # Brand Reputation Summary: "<Article Title>"
     **Citation**: <Author>, <Year>. <Title>. Retrieved from <URL>  
     **Role**: <Assigned Role>  
-    **Simulated Prompt**: <Prompt used for interpretation>  
-    **AI Interpretation**: <2–3 sentence summary>  
-    **Prompt Answer**: <Direct answer to the simulated prompt. 2 paragraphs>
+    **Simulated Prompt**: <Prompt>  
+    **Stakeholder Interpretation**: <2–3 sentence summary>  
+    **PR Insight**: <300 words. Describe the likely public/press/investor reaction and any risk or opportunity for the brand.>
+    **Sentiment**: <positive | neutral | negative>  
+    **PR Keywords Detected**: [<list of keywords>]
   agent: summarization_agent
   output_file: summaries.md
