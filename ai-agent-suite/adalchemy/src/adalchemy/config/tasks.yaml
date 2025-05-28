@@ -1,0 +1,50 @@
+taxonomy_mapping_task:
+  description: >
+    Analyze the provided Audience and Content Taxonomy lists.
+    Use semantic matching and behavioral inference to map each audience segment 
+    to one or more logical content categories.
+  expected_output: >
+    A table with two columns:
+    - Audience Category
+    - Mapped Content Categories (comma-separated if multiple)
+    Only include audience segments with clear and meaningful content matches.
+  agent: taxonomy_mapper
+
+research_task:
+  description: >
+    Analyze the content at {url}.
+    Using the provided taxonomy mappings:
+    - Identify likely audience segments.
+    - Categorize the content using taxonomy keywords.
+    - Recommend ad strategies and placements relevant to the content.
+  expected_output: >
+    A list of 10 bullet points:
+    - Audience segments relevant to the content.
+    - Keyword-based content categories.
+    - Relevant ad strategies and placement ideas.
+  agent: researcher
+
+reporting_task:
+  description: >
+    Convert prior analysis into a comprehensive markdown report.
+    Include strategic recommendations, categorized by audience and content, referencing IAB taxonomy.
+  expected_output: >
+    A structured markdown report with clear sections:
+    - Target Audiences
+    - Product Fit
+    - Ad Strategy Recommendations
+  agent: reporting_analyst
+
+ad_relevance_scoring_task:
+  description: >
+    Given a content summary, keywords, and context, score and rank audience segments and content categories
+    by their relevance for targeted advertising campaigns. Consider audience demographics, interests, keywords,
+    and overall context to produce a prioritized list for best ad targeting.
+  expected_output: >
+    A ranked list or table showing:
+    - Audience Category
+    - Content Category
+    - Relevance Score (e.g., 0-10)
+    Provide explanations for top scores where applicable.
+  agent: ad_relevance_scorer
+
