@@ -19,7 +19,7 @@ def run():
     """
     url = "https://www.huffpost.com/"
     inputs = {
-        'url': "str(URL of site)"
+        "url": "URL of site to be reviewed"
         #'topic': 'URL Ad Review',
         #'current_year': str(datetime.now().year)
     }
