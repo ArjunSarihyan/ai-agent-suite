@@ -1,0 +1,50 @@
+┌──────────────────────────────────────────────────────────┐
+│                     START: crewai run                    │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│ STEP 1: Content Domain Categorization                    │
+│ Agent: Senior Data Researcher                            │
+│ - Input: content.json (scraped URLs)                     │
+│ - Output: Summary + Domains (Finance, Tech, etc.)        │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│ STEP 2: Audience Segmentation & Product Matching         │
+│ Agent: Advertising Content Analyst                       │
+│ - Matches domains to audience segments                   │
+│ - Assigns UIDs + recommends products per segment         │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│ STEP 3: Relevance Scoring of URLs                        │
+│ Agent: Relevance Scoring Specialist                      │
+│ - Rates each URL (1–10) based on segment matches         │
+│ - Tags matched UIDs and gives rationale                  │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│ STEP 4: IAB Taxonomy Mapping                             │
+│ Agent: Content Taxonomy Expert                           │
+│ - Standardizes classifications using IAB taxonomy        │
+│ - Adds confidence scores for each match                  │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│ STEP 5: Final Reporting                                   │
+│ Agent: Reporting Analyst                                 │
+│ - Synthesizes previous steps                             │
+│ - Ranks top 3 URLs with scores, segments, UIDs, products │
+│ - Outputs strategic recommendations for Q2 growth        │
+└──────────────────────────────────────────────────────────┘
+                 |
+                 v
+┌──────────────────────────────────────────────────────────┐
+│                      END: Crew Completed                 │
+│              Goal: +20% unique audience in Q2            │
+└──────────────────────────────────────────────────────────┘
