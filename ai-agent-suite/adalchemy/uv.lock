@@ -17,7 +17,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "crewai", extras = ["tools"], specifier = ">=0.119.0,<1.0.0" }]
+requires-dist = [{ name = "crewai", extras = ["tools"], specifier = "==0.120.1" }]
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -534,7 +534,7 @@ wheels = [
 
 [[package]]
 name = "crewai"
-version = "0.126.0"
+version = "0.120.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "appdirs" },
@@ -547,7 +547,6 @@ dependencies = [
     { name = "json5" },
     { name = "jsonref" },
     { name = "litellm" },
-    { name = "onnxruntime" },
     { name = "openai" },
     { name = "openpyxl" },
     { name = "opentelemetry-api" },
@@ -558,14 +557,13 @@ dependencies = [
     { name = "python-dotenv" },
     { name = "pyvis" },
     { name = "regex" },
-    { name = "tokenizers" },
     { name = "tomli" },
     { name = "tomli-w" },
     { name = "uv" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e7/53/c04da767da6defc6bf6cd2a03f15626441a5eb6079b5ede69059f060d8cb/crewai-0.126.0.tar.gz", hash = "sha256:2dc3a5159ccff8402a150c7242baa475b39c5ecf4652af967e8b430211c64586", size = 103524351, upload-time = "2025-06-05T00:50:15.306Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e8/f7/c33a3e80e00e6916604bd52593d7acaf40b81cddcbff6c182b0d3cca9b1a/crewai-0.120.1.tar.gz", hash = "sha256:d2300da6b52a11923c7f6bd304e12c227840c2febc20d495b7c2f37efe48ea5a", size = 72377150, upload-time = "2025-05-15T00:21:56.341Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/5a/82/a753902c9061eaf8b927d22d068b3ebf3ad1722848e00d9d0c746fe47101/crewai-0.126.0-py3-none-any.whl", hash = "sha256:9c780c1d05ae739c249d96840b136d06e5b41eb63394fa74e26fe378ef7a1d42", size = 321070, upload-time = "2025-06-05T00:49:25.599Z" },
+    { url = "https://files.pythonhosted.org/packages/af/d3/f33b44b30fabfd284d555334aa952dff303f5b8be0831192a28584071899/crewai-0.120.1-py3-none-any.whl", hash = "sha256:cfb5af8d3633a223ae4ad785b9f22c796bba153d2d1efd96d50794e555d25839", size = 310031, upload-time = "2025-05-15T00:21:51.417Z" },
 ]
 
 [package.optional-dependencies]
@@ -575,7 +573,7 @@ tools = [
 
 [[package]]
 name = "crewai-tools"
-version = "0.46.0"
+version = "0.45.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "chromadb" },
@@ -590,9 +588,9 @@ dependencies = [
     { name = "pytube" },
     { name = "requests" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0d/9e/69109f5d5b398b2edeccec1055e93cdceac3becd04407bcce97de6557180/crewai_tools-0.46.0.tar.gz", hash = "sha256:c8f89247199d528c77db4b450a1ca781b5d32405982467baf516ede4b2045bd1", size = 913715, upload-time = "2025-05-28T23:15:24.508Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e9/3a/7070dcacef56702c5d83ad1a87021b1666ff1850ff80b3aa7540892406e7/crewai_tools-0.45.0.tar.gz", hash = "sha256:1b2e4eff3f928ce5fac308d6e648719a0e4718a1228ae98980aa0d74fc16bfc7", size = 909723, upload-time = "2025-05-14T18:51:50.927Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ab/62/0b68637ce820fbb0385495bd6d75ceb27de53f060df5417f293419826481/crewai_tools-0.46.0-py3-none-any.whl", hash = "sha256:f8e60723869ca36ede7b43dcc1491ebefc93410a972d97b7b0ce59c4bd7a826b", size = 606190, upload-time = "2025-05-28T23:15:22.294Z" },
+    { url = "https://files.pythonhosted.org/packages/6e/72/db45626973027c992df75cbc7ef391f18393d631be3bceb6388c1b9f01e1/crewai_tools-0.45.0-py3-none-any.whl", hash = "sha256:9dd34e4792c075ee7a72134aedaab268e78d0e350114fd7fe2426e691c5f52a3", size = 602659, upload-time = "2025-05-14T18:51:49.077Z" },
 ]
 
 [[package]]
@@ -1359,11 +1357,11 @@ wheels = [
 
 [[package]]
 name = "json-repair"
-version = "0.46.1"
+version = "0.46.2"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/7c/3c/0e48912ba21b7f356b9b1ede3f742710e314b3fbc4da5fa7c2459f5bac83/json_repair-0.46.1.tar.gz", hash = "sha256:ff7bc239b513787588fb4961a85f7b8de93724a13711ecf6b9e72ac0d32d7bd0", size = 33393, upload-time = "2025-06-04T18:15:14.33Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/cb/74/f8e4eb4ce31be034c08fd3da37328c9ab7a7503831cf6f41d2121699cc88/json_repair-0.46.2.tar.gz", hash = "sha256:4c81154d61c028ca3750b451472dbb33978f2ee6f44be84c42b444b03d9f4b16", size = 33605, upload-time = "2025-06-06T08:05:48.46Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/f4/3c/e338f6de3e54439fc6a71a57e09d4186c2bb000eb678d161ab2430085e4d/json_repair-0.46.1-py3-none-any.whl", hash = "sha256:4ae27b8e04c3a295b172a4bc51913279fc99de5297e59ea730ae07797df3c86d", size = 22299, upload-time = "2025-06-04T18:15:12.773Z" },
+    { url = "https://files.pythonhosted.org/packages/8c/d7/5f31df5ad00474f3005bbbac5f3a1e8d36535b40f1d352e6a5bd9880bf1f/json_repair-0.46.2-py3-none-any.whl", hash = "sha256:21fb339de583ab68db4272f984ec6fca9cc453d8117d9870e83c28b6b56c20e6", size = 22326, upload-time = "2025-06-06T08:05:47.064Z" },
 ]
 
 [[package]]
