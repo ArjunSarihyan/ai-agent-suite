@@ -18,9 +18,10 @@ def run():
     Run the crew.
     """
     url = "https://www.huffpost.com/"
+    topic = "Gender-Fluid Streetwear Inspired by Global Subcultures"
     inputs = {
-        "url": url
-        #'topic': 'URL Ad Review',
+        "url": "Enter URL to be scored",
+        'topic': "Enter the ad campaign"
         #'current_year': str(datetime.now().year)
     }
     try:

@@ -1,27 +1,53 @@
 taxonomy_mapping_task:
   description: >
-    Analyze the provided Audience and Content Taxonomy lists.
-    Use semantic matching and behavioral inference to map each audience segment 
-    to one or more logical content categories.
+    Analyze the provided Audience and Content Taxonomy lists, leveraging both hierarchical structure and semantic meaning.
+    For each audience segment, use a combination of:
+      - Semantic Matching: Identify direct and conceptually related content categories based on keywords, themes, or descriptions.
+      - Behavioral Inference: Apply marketing logic to infer what types of content each audience is most likely to engage with, including interests, lifestyle, and intent.
+    Expand content mappings wherever logical, including closely related subcategories or parent categories.
+
   expected_output: >
     A table with two columns:
     - Audience Category
     - Mapped Content Categories (comma-separated if multiple)
-    Only include audience segments with clear and meaningful content matches.
+    
+    Mapping Guidelines:
+    - Include **multiple related content categories** per audience segment when relevant.
+    - Use **semantic similarity**, **interest alignment**, and **behavioral logic** to determine matches.
+    - Prioritize **real-world applicability** — choose content categories that make sense for media targeting or contextual alignment.
+    - Skip audience segments only if no meaningful match exists.
+    - Avoid superficial or overly broad matches unless behaviorally justified.
+
+    Example:
+    | Audience Category        | Mapped Content Categories                                   |
+    |-------------------------|-------------------------------------------------------------|
+    | Eco-Conscious Consumers | Sustainable Living, Green Products, Environmental News      |
+    | New Parents             | Parenting, Child Development, Family Health, Baby Products  |
+    | College Students        | Education, Career Planning, Budget Living, Entertainment    |
+    | Luxury Travelers        | Luxury Travel, Fine Dining, Lifestyle, Travel Planning      |
+
   agent: taxonomy_mapper
 
 research_task:
   description: >
-    Analyze the content at {url}.
-    Using the provided taxonomy mappings:
-    - Identify likely audience segments.
-    - Categorize the content using taxonomy keywords.
-    - Recommend ad strategies and placements relevant to the content.
+    Analyze the content at {url} in the context of the provided campaign topic "{topic}".
+    Using taxonomy mappings and behavioral logic:
+    - Identify relevant audience segments based on content themes and tone.
+    - Categorize the content using keywords from the Content Taxonomy.
+    - Recommend targeted ad strategies and placement ideas tied to both audience interest and the campaign topic.
+
   expected_output: >
-    A list of 10 bullet points:
-    - Audience segments relevant to the content.
-    - Keyword-based content categories.
-    - Relevant ad strategies and placement ideas.
+    A list of 10 bullet points, each covering:
+    - A brief content summary or insight from {url} that is contextually relevant to "{topic}".
+    - The most likely audience segments this content appeals to.
+    - Appropriate content taxonomy labels based on keyword or theme alignment.
+    - Suggested ad strategies or placements informed by behavior, interest, or trend signals.
+
+    Focus on:
+    - Insightful and non-obvious mappings.
+    - Real-world applicability of the ad strategy suggestions.
+    - Alignment with strategic marketing needs for the topic "{topic}".
+
   agent: researcher
 
 reporting_task:
@@ -37,14 +63,30 @@ reporting_task:
 
 ad_relevance_scoring_task:
   description: >
-    Given a content summary, keywords, and context, score and rank audience segments and content categories
-    by their relevance for targeted advertising campaigns. Consider audience demographics, interests, keywords,
-    and overall context to produce a prioritized list for best ad targeting.
+    Given a content summary, keywords, and context, evaluate and rank the top 3 most relevant combinations
+    of audience segments and content categories for targeted advertising campaigns.
+    Relevance scoring should consider audience demographics, interests, keyword alignment,
+    and overall contextual fit using behavioral and semantic understanding.
+
   expected_output: >
-    A ranked list or table showing:
+    A ranked list or table showing ONLY the top 3 results:
     - Audience Category
     - Content Category
-    - Relevance Score (e.g., 0-10)
-    Provide explanations for top scores where applicable.
+    - Relevance Score (float, range 0.00–10.00, 2 decimal points)
+    
+    Also include a brief explanation for each of the top 3 scores, highlighting why they are highly relevant.
+
+    Example Output:
+    | Rank | Audience Category      | Content Category       | Relevance Score |
+    |------|------------------------|------------------------|-----------------|
+    | 1    | Eco-Conscious Shoppers | Sustainable Living     | 9.75            |
+    | 2    | Fitness Enthusiasts    | Health & Nutrition     | 9.42            |
+    | 3    | Young Professionals    | Career Development     | 8.87            |
+
+    Explanations:
+    - Rank 1: High behavioral alignment between eco-conscious values and content promoting sustainability.
+    - Rank 2: Strong semantic and interest match with wellness and fitness topics.
+    - Rank 3: Career-oriented content aligns well with professional growth demographics.
+
   agent: ad_relevance_scorer
 

@@ -43,6 +43,26 @@ class Adalchemy_v2():
         self.adproduct_segment_knowledge.load_content()
 
     @agent
+    def manager(self) -> Agent:
+        """Custom manager agent controlling delegation and workflow"""
+        return Agent(
+            role="Project Manager",
+            goal="Efficiently manage the crew and ensure high-quality task completion",
+            backstory="Experienced project manager skilled in overseeing complex projects and guiding teams to success.",
+            allow_delegation=True,  # Enable task delegation by manager
+            verbose=True
+        )
+
+    def delegate_work_example(self, delegate_tool):
+        coworker = "Audience Taxonomy Specialist"
+        task = "Analyze the research output and map it accurately to audience taxonomy nodes."
+        context = (
+            "The research output includes detailed audience segments, their demographics, "
+            "behaviors, and relevance for targeted marketing campaigns."
+        )
+        delegate_tool(coworker=coworker, task=task, context=context)
+
+    @agent
     def researcher(self) -> Agent:
         return Agent(
             config=self.agents_config['researcher'],  # type: ignore[index]
@@ -85,29 +105,48 @@ class Adalchemy_v2():
     def audience_taxonomy_task(self) -> Task:
         return Task(
             config=self.tasks_config['audience_taxonomy_task'],  # type: ignore[index]
-            agent=self.audience_taxonomy_agent()
+            agent=self.audience_taxonomy_agent(),
+            input=lambda: self.research_task().output  # Use research_task output as input
         )
 
     @task
     def content_taxonomy_task(self) -> Task:
         return Task(
             config=self.tasks_config['content_taxonomy_task'],  # type: ignore[index]
-            agent=self.content_taxonomy_agent()
+            agent=self.content_taxonomy_agent(),
+            input=lambda: self.research_task().output  # Use research_task output as input
         )
 
     @task
     def adproduct_taxonomy_task(self) -> Task:
         return Task(
             config=self.tasks_config['adproduct_taxonomy_task'],  # type: ignore[index]
-            agent=self.adproduct_taxonomy_agent()
+            agent=self.adproduct_taxonomy_agent(),
+            input=lambda: self.research_task().output  # Use research_task output as input
         )
 
     @crew
     def crew(self) -> Crew:
-        """Creates the Adalchemy_v2 crew with all agents and tasks."""
+        """Creates the Adalchemy_v2 crew with hierarchical process, a manager, and tasks."""
+
+        # List all your agents except the manager here explicitly
+        agents_list = [
+            self.researcher(),
+            self.audience_taxonomy_agent(),
+            self.content_taxonomy_agent(),
+            self.adproduct_taxonomy_agent()
+        ]
+
         return Crew(
-            agents=self.agents,
-            tasks=self.tasks,
-            process=Process.sequential,
+            agents=agents_list,  # manager NOT included here
+            tasks=[
+                self.research_task(),
+                self.audience_taxonomy_task(),
+                self.content_taxonomy_task(),
+                self.adproduct_taxonomy_task()
+            ],
+            process=Process.hierarchical,
+            manager_agent=self.manager(),  # manager passed separately
+            planning=True,
             verbose=True
         )
