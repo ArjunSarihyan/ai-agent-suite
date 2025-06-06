@@ -4,7 +4,7 @@ import warnings
 
 from datetime import datetime
 
-from adalchemy.crew import Adalchemy
+from adalchemy_v2.crew import Adalchemy_v2
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 
@@ -17,14 +17,15 @@ def run():
     """
     Run the crew.
     """
-    url = "https://www.huffpost.com/"
+    url = "https://www.buzzfeed.com/kelley_greene/effects-of-tariffs-on-chinese-grocery-store"
+    topic =  "Achieve a 20% growth in unique audience reach during Q2 by strategically targeting and optimizing content across diverse, high-intent audience segments — including key purchase intent categories."
     inputs = {
-        "url": url
-        #'topic': 'URL Ad Review',
-        #'current_year': str(datetime.now().year)
+        "url": url,
+        "topic": topic,
+        "current_year": str(datetime.now().year)
     }
     try:
-        Adalchemy().crew().kickoff(inputs=inputs)
+        Adalchemy_v2().crew().kickoff(inputs=inputs)
     except Exception as e:
         raise Exception(f"An error occurred while running the crew: {e}")
 
@@ -38,7 +39,7 @@ def train():
         'current_year': str(datetime.now().year)
     }
     try:
-        Adalchemy().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
+        Adalchemy_v2().crew().train(n_iterations=int(sys.argv[1]), filename=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while training the crew: {e}")
@@ -48,7 +49,7 @@ def replay():
     Replay the crew execution from a specific task.
     """
     try:
-        Adalchemy().crew().replay(task_id=sys.argv[1])
+        Adalchemy_v2().crew().replay(task_id=sys.argv[1])
 
     except Exception as e:
         raise Exception(f"An error occurred while replaying the crew: {e}")
@@ -63,7 +64,7 @@ def test():
     }
     
     try:
-        Adalchemy().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
+        Adalchemy_v2().crew().test(n_iterations=int(sys.argv[1]), eval_llm=sys.argv[2], inputs=inputs)
 
     except Exception as e:
         raise Exception(f"An error occurred while testing the crew: {e}")

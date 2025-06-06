@@ -1,0 +1,54 @@
+research_task:
+  description: >
+    You are provided with content extracted from the URL: {url}.
+    Your objectives are to analyze this content thoroughly using the provided taxonomy mappings.
+    Specifically:
+    - Summarize the main ideas and messages conveyed in the content.
+    - Classify the domain or category of the content (e.g., news, technology, health, lifestyle).
+    - Extract key insights and actionable takeaways that would be valuable for strategic planning.
+    - Contextualize the topic within current market or industry trends, focusing on relevance to the input topic: "{topic}".
+    Use your deep understanding of audience segments, content categories, podcast genres, and ad product taxonomies to enrich the analysis.
+  expected_output: >
+    A detailed report including:
+    1. Concise summary of the content (3-5 sentences).
+    2. Domain classification (with justification).
+    3. List of 5-7 key insights derived from the content.
+    4. Explanation of how the content relates to the topic context provided, with specific reference to audience targeting and ad strategies.
+  agent: researcher
+
+audience_taxonomy_task:
+  description: >
+    Based on the output of the research_task, analyze and suggest relevant audience taxonomy nodes.
+    Use the audience taxonomy chunks to identify the most applicable audience segments, prioritizing nodes that align with key insights and domain classification.
+  expected_output: >
+    A list of audience taxonomy nodes with Unique IDs and Names relevant to the content analyzed,
+    including brief explanations of their relevance.
+  agent: audience_taxonomy_agent
+
+content_taxonomy_task:
+  description: >
+    Using the research_task output, identify the most relevant IAB content taxonomy nodes.
+    Refer to the IAB content taxonomy chunks to classify the content precisely and recommend appropriate categories.
+    A sample chunk looks like the following:{
+        "Unique ID": "12",
+        "Parent ID": "2",
+        "Name": "Microcar",
+        "Tier 1": "Automotive",
+        "Tier 2": "Auto Body Styles",
+        "Tier 3": "Microcar",
+        "Tier 4": "",
+        "Extension": ""}
+
+  expected_output: >
+    A prioritized list of content taxonomy nodes with Unique IDs and Names that best describe the content,
+    along with justification for each selection.
+  agent: content_taxonomy_agent
+
+adproduct_taxonomy_task:
+  description: >
+    From the research_task output, determine relevant ad product taxonomy nodes.
+    Use the ad product taxonomy chunks to suggest advertising categories and product placements fitting the analyzed content.
+  expected_output: >
+    A list of ad product taxonomy nodes with Unique IDs, Names, and Tiers,
+    detailing their suitability and potential ad strategy implications.
+  agent: adproduct_taxonomy_agent
