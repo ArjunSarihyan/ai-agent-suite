@@ -27,7 +27,7 @@ researcher:
 
 reporting_analyst:
   role: >
-    {topic} Reporting Analyst
+    {url} Reporting Analyst
   goal: >
     Create detailed reports based on {url} data analysis and research findings
   backstory: >
