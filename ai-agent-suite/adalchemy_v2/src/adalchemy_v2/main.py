@@ -17,7 +17,7 @@ def run():
     """
     Run the crew.
     """
-    url = "https://www.buzzfeed.com/kelley_greene/effects-of-tariffs-on-chinese-grocery-store"
+    url = "https://sports.yahoo.com/nba/breaking-news/live/pacers-vs-thunder-score-okc-dominates-nba-finals-game-2-behind-big-game-from-shai-gilgeous-alexander-as-tyrese-haliburton-fades-223020825.html"
     topic =  "Achieve a 20% growth in unique audience reach during Q2 by strategically targeting and optimizing content across diverse, high-intent audience segments — including key purchase intent categories."
     inputs = {
         "url": url,
