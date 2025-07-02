@@ -13,9 +13,9 @@ from crew import Adalchemy_v2
 
 st.set_page_config(page_title="🧠 Adalchemy CrewAI", layout="centered")
 st.title("🔍 Adalchemy CrewAI Interactive Tool")
-st.markdown("Run taxonomy segmentation pipeline directly from UI.")
+st.markdown("Run taxonomy segmentation pipeline directly from the UI.")
 
-# Parse markdown table and extract average confidence
+# === Helpers ===
 def parse_markdown_report(content: str):
     table_regex = re.compile(
         r"(\|.+\|)\n(\|[-\s|:]+\|)(\n(\|.*\|))+",
@@ -30,13 +30,12 @@ def parse_markdown_report(content: str):
     before_table = parts[0].strip()
     after_table = parts[1].strip() if len(parts) > 1 else ""
 
-    # Extract average confidence
     avg_score_match = re.search(r'average confidence.*?([0-9]+\.[0-9]+)', content, re.IGNORECASE)
     avg_score = float(avg_score_match.group(1)) if avg_score_match else None
 
     lines = table_block.strip().splitlines()
     header_line = lines[0]
-    data_lines = lines[2:]  # skip header and separator
+    data_lines = lines[2:]
 
     headers = [col.strip() for col in header_line.strip().split('|') if col.strip()]
     parsed_rows = []
@@ -51,15 +50,14 @@ def parse_markdown_report(content: str):
     df = pd.DataFrame(parsed_rows, columns=headers)
     return df, before_table + "\n\n" + after_table, avg_score
 
-# Color-coded score display
 def render_avg_score(score: float):
-    color = "#FF4B4B"  # Red
+    color = "#FF4B4B"
     if score >= 0.9:
-        color = "#007F00"  # Dark Green
+        color = "#007F00"
     elif score >= 0.8:
-        color = "#4CAF50"  # Light Green
+        color = "#4CAF50"
     elif score >= 0.7:
-        color = "#FFB700"  # Yellow
+        color = "#FFB700"
 
     st.markdown(
         f"""
@@ -71,7 +69,6 @@ def render_avg_score(score: float):
         unsafe_allow_html=True,
     )
 
-# Table styling with confidence coloring + hover
 def style_dataframe_as_html(df: pd.DataFrame, threshold: float = 0.7) -> str:
     html = """
     <style>
@@ -116,10 +113,11 @@ def style_dataframe_as_html(df: pd.DataFrame, threshold: float = 0.7) -> str:
     html += "</tbody></table>"
     return html
 
-# UI form
+# === UI Form ===
 with st.form("crew_form"):
     url = st.text_input("📎 Enter content URL", value="https://sports.yahoo.com")
     topic = st.text_area("🧠 Strategic Topic", value="Achieve a 20% growth in unique audience reach during Q2...")
+    threshold = st.slider("🎯 Confidence Threshold", min_value=0.0, max_value=1.0, value=0.7, step=0.05)
     submitted = st.form_submit_button("Run CrewAI")
 
 if submitted:
@@ -137,22 +135,72 @@ if submitted:
 
         if report_path and Path(report_path).exists():
             st.success("✅ Crew Execution Completed!")
+
+            # Enhanced Ad Creatives Display
+            creatives = crew_model.outputs.get("creatives")
+            if creatives:
+                st.markdown("### 🌟 Recommended Ad Creatives")
+
+                creative_str = str(creatives)
+                creative_lines = [line.strip() for line in creative_str.splitlines() if line.strip() and not line.startswith("###")]
+
+                st.markdown("""
+                <style>
+                    .creative-card {
+                        border: 2px solid #eee;
+                        border-left: 6px solid #1f77b4;
+                        padding: 1em;
+                        margin-bottom: 1em;
+                        border-radius: 10px;
+                        background-color: #f9f9f9;
+                    }
+                    .audience { border-left-color: #FFB700; }
+                    .content { border-left-color: #4CAF50; }
+                    .adproduct { border-left-color: #007F00; }
+                    .creative-icon {
+                        font-size: 1.3em;
+                        margin-right: 0.4em;
+                    }
+                </style>
+                """, unsafe_allow_html=True)
+
+                for line in creative_lines:
+                    line_lower = line.lower()
+                    if "audience" in line_lower:
+                        category = "audience"
+                        icon = "🌟"
+                    elif "contextual" in line_lower:
+                        category = "content"
+                        icon = "🖌️"
+                    elif "ad product" in line_lower or "use" in line_lower:
+                        category = "adproduct"
+                        icon = "💡"
+                    else:
+                        category = ""
+                        icon = "✨"
+
+                    st.markdown(f"""
+                    <div class="creative-card {category}">
+                        <span class="creative-icon">{icon}</span> {line}
+                    </div>
+                    """, unsafe_allow_html=True)
+
+            # Parse markdown
             with open(report_path, "r", encoding="utf-8") as f:
                 markdown_content = f.read()
-
             df, rest_of_report, avg_score = parse_markdown_report(markdown_content)
 
-            if avg_score is not None:
-                render_avg_score(avg_score)
+            with st.expander("📊 View Detailed Taxonomy Scoring & Evaluation"):
+                if avg_score is not None:
+                    render_avg_score(avg_score)
 
-            if df is not None:
-                html_table = style_dataframe_as_html(df)
-                st.markdown("### 📊 Scored Taxonomy Table")
-                st.markdown(html_table, unsafe_allow_html=True)
+                if df is not None:
+                    html_table = style_dataframe_as_html(df, threshold=threshold)
+                    st.markdown(html_table, unsafe_allow_html=True)
 
-            if rest_of_report:
-                st.markdown("### 📘 Additional Report Summary")
-                st.markdown(rest_of_report, unsafe_allow_html=True)
+                if rest_of_report:
+                    st.markdown("### 📘 Additional Report Summary")
+                    st.markdown(rest_of_report, unsafe_allow_html=True)
 
         else:
             st.warning("⚠️ Report file not found after crew execution.")

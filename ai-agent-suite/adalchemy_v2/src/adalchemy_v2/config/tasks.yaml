@@ -1,91 +1,82 @@
 research_task:
   description: >
-    You are provided with content extracted from the URL: {url}.
-    Your objectives are to analyze this content thoroughly using the provided taxonomy mappings.
-    Specifically:
-    - Summarize the main ideas and messages conveyed in the content.
-    - Classify the domain or category of the content (e.g., news, technology, health, lifestyle).
-    - Extract key insights and actionable takeaways that would be valuable for strategic planning.
-    - Contextualize the topic within current market or industry trends, focusing on relevance to the input topic: "{topic}".
-    Use your deep understanding of audience segments, content categories, podcast genres, and ad product taxonomies to enrich the analysis.
+    Analyze content extracted from the URL: {url}, with special focus on the marketing topic: "{topic}".
+    Your objectives are to:
+      - Summarize main ideas and content structure.
+      - Classify the domain/category of the content (e.g., tech, lifestyle).
+      - Extract actionable insights for targeting.
+      - Relate all findings to the context of the provided topic.
   expected_output: >
-    A detailed report including:
-    1. Concise summary of the content (3-5 sentences).
-    2. Domain classification (with justification).
-    3. List of 5-7 key insights derived from the content.
-    4. Explanation of how the content relates to the topic context provided, with specific reference to audience targeting and ad strategies.
-    Return the entire output as a plain text report, not as a JSON or dict.
+    A plain-text report with:
+      1. Summary (3–5 sentences)
+      2. Domain classification with reason
+      3. 5–7 bullet points of insights
+      4. Explanation of relevance to the topic "{topic}", especially for ad and audience strategy
   agent: researcher
 
 audience_taxonomy_task:
   description: >
-    Based on the output of the research_task, analyze and suggest only relevant audience taxonomy nodes present in the audience taxonomy chunks.
-    Do not add any nodes outside of the known taxonomy dataset.
-    Prioritize nodes that align with key insights and domain classification,
-    and exclude any categories that are unsupported or uncertain.
+    From the research findings, suggest only valid audience taxonomy nodes from the official dataset.
+    Do not invent or extrapolate any nodes.
   expected_output: >
-    A list of audience taxonomy nodes with Unique IDs and Names that are explicitly found in the audience taxonomy dataset,
-    including brief explanations of their relevance.
-    Do NOT include any invented or hallucinated audience nodes.
+    A list of audience taxonomy nodes, each including:
+      - Taxonomy Type
+      - Unique ID
+      - Condensed Name
+      - Tiers 1 to 6
+      - Extension Notes (if any)
+      - Explanation for each node's relevance
   agent: audience_taxonomy_agent
 
 content_taxonomy_task:
   description: >
-    Using the research_task output, identify the most relevant IAB content taxonomy nodes.
-    Refer to the IAB content taxonomy chunks to classify the content precisely and recommend appropriate categories.
-    A sample chunk looks like the following:{
-        "Unique ID": "12",
-        "Parent ID": "2",
-        "Name": "Microcar",
-        "Tier 1": "Automotive",
-        "Tier 2": "Auto Body Styles",
-        "Tier 3": "Microcar",
-        "Tier 4": "",
-        "Extension": ""}
-
+    Using the research insights, classify the content using only valid nodes from the content taxonomy dataset.
   expected_output: >
-    A prioritized list of content taxonomy nodes with Unique IDs and Names that best describe the content,
-    along with justification for each selection.
+    A prioritized list of valid content taxonomy nodes including:
+      - Taxonomy Type
+      - Unique ID
+      - Name
+      - Tiers 1 to 4
+      - Extension (if any)
+      - Justification for selection
   agent: content_taxonomy_agent
 
 adproduct_taxonomy_task:
   description: >
-    From the research_task output, determine relevant ad product taxonomy nodes.
-    Use the ad product taxonomy chunks to suggest advertising categories and product placements fitting the analyzed content.
-    Refer to the IAB content taxonomy chunks to classify the content precisely and recommend appropriate categories.
-    A sample chunk looks like the following:{
-          "Unique ID": "1041",
-          "Parent ID": "1037",
-          "Name": "Transportation",
-          "Tier 1": "Business and Industrial",
-          "Tier 2": "Industrials",
-          "Tier 3": "Transportation",
-          "Extension Notes": ""
-        }
+    Suggest ad product taxonomy nodes that match the research insights, using only entries from the official taxonomy.
   expected_output: >
-    A list of ad product taxonomy nodes with Unique IDs, Names, and Tiers,
-    detailing their suitability and potential ad strategy implications.
+    A list of ad product taxonomy nodes with:
+      - Taxonomy Type
+      - Unique ID
+      - Name
+      - Tiers 1 to 3
+      - Extension Notes (if any)
+      - Explanation for how each aligns with content or target audience
   agent: adproduct_taxonomy_agent
 
 scoring_task:
   description: >
-    Analyze the user's query for semantic and categorical relevance. Extract keywords related to content, audience, demographics, and ad formats.
-    Use these keywords to find all relevant matches across:
-      1. IAB Content Taxonomy 3.1
-      2. IAB Audience Taxonomy 1.1
-      3. IAB Ad Product Taxonomy 2.0
-      4. (Optional) CTV & Podcast Taxonomies
-    Output results as a plain text table with columns for taxonomy type, unique ID, name, confidence score, and any relevant metadata.
-    Provide a clear explanation of the matching rationale and an overall confidence score.
+    Evaluate taxonomy nodes (Content, Audience, Ad Product) for contextual accuracy.
+    Assign confidence scores (0 to 1) and provide detailed justifications.
   expected_output: >
-    A plain text report containing:
-    1. A table with columns:
-       - Taxonomy Type (Content / Audience / Ad Product)
-       - Unique ID
-       - Name
-       - Confidence Score
-       - Additional Metadata (if any)
-    2. Explanation of why matches were selected.
-    3. Overall confidence score (0 to 1).
-    4. Processing time metadata.
+    A plain-text report containing:
+      1. A table with columns:
+         - Taxonomy Type
+         - Unique ID
+         - Name
+         - Confidence Score (0–1)
+         - Evaluation Notes
+      2. Average confidence score summary
+      3. Processing metadata (runtime, timestamp)
   agent: scoring_agent
+
+show_creatives_task:
+  description: >
+    Based on taxonomy matches with confidence score ≥ 0.8, suggest ad creative ideas grouped by taxonomy type.
+  expected_output: >
+    A markdown section listing ad creative ideas grouped by:
+      - Audience
+      - Content
+      - Ad Product
+    Include 1–2 examples per group with specific, actionable ad strategies.
+  agent: creative_agent

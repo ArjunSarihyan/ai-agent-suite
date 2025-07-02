@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 import sys
 import warnings
-
+import os
+os.environ["CREWAI_DISABLE_TELEMETRY"] = "true"
 from datetime import datetime
-
 from adalchemy_v2.crew import Adalchemy_v2
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
@@ -17,8 +17,8 @@ def run():
     """
     Run the crew.
     """
-    url = "https://sports.yahoo.com/nba/breaking-news/live/pacers-vs-thunder-score-okc-dominates-nba-finals-game-2-behind-big-game-from-shai-gilgeous-alexander-as-tyrese-haliburton-fades-223020825.html"
-    topic =  "Achieve a 20% growth in unique audience reach during Q2 by strategically targeting and optimizing content across diverse, high-intent audience segments — including key purchase intent categories."
+    url = "https://www.forbes.com"
+    topic = "Increase enrollment by 25% over the next 6 months among part-time employed adults by promoting flexible, career-advancing educational programs through targeted digital campaigns and partnerships with employers."
     inputs = {
         "url": url,
         "topic": topic,
