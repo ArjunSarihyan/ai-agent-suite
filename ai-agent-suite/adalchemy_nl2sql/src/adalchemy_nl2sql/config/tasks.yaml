@@ -1,6 +1,63 @@
+researcher_task:
+  description: >-
+    Analyze the user input `{topic}` from the lens of digital advertising strategy.
+    Extract key terms and concepts that are essential to the topic —
+    especially those that would be found in advertising product, audience, or content taxonomies.
+
+    Your output should be a list of the most relevant keywords and key phrases,
+    including demographics, interests, behaviors, purchase intent, and categories.
+
+  agent: researcher_agent
+
+  examples:
+    - user_input: "Target users aged 18-24 interested in basketball and sports betting"
+      expected_output: |
+        ["18-24", "basketball", "sports betting"]
+
+    - user_input: "Market to professionals looking for remote part-time digital jobs"
+      expected_output: |
+        ["professionals", "remote", "part-time", "digital jobs"]
+
+semantic_task:
+  description: >-
+    Take the extracted keywords from the researcher agent and map them semantically against taxonomy entries.
+    Use word embeddings to find the most relevant matches from the FAISS-based metadata.
+
+    Return an expanded and taxonomy-aligned list of keywords or phrases to improve SQL querying.
+
+    Provide a brief explanation or log of semantic matches for debugging.
+
+  agent: semantic_agent
+
+  examples:
+    - user_input: '["18-24", "basketball", "sports betting"]'
+      expected_output: |
+        {
+          "expanded_keywords": [
+            "18-24",
+            "Basketball",
+            "Sports Betting",
+            "College Basketball",
+            "Virtual Betting"
+          ],
+          "log": "Matched 'basketball' to 'Basketball', 'sports betting' to 'Sports Betting' and 'Virtual Betting'"
+        }
+
+    - user_input: '["remote", "part-time", "digital jobs"]'
+      expected_output: |
+        {
+          "expanded_keywords": [
+            "Remote",
+            "Part-Time",
+            "Digital Jobs",
+            "Freelancer"
+          ],
+          "log": "Expanded 'digital jobs' to include 'Freelancer'"
+        }
+
 sql_query_task:
-  description: >
-    You are given a user's natural language query {topic}. Your job is to:
+  description: >-
+    You are given a user's natural language query `{topic}`. Your job is to:
     1. Determine the user’s true intent (e.g., topic, entities, categories).
     2. Match relevant keywords to the `condensed_name_full` column in **each** of the three tables: adproduct, audience, and content.
     3. Write **individual SQL SELECT statements** for each table that only use the `condensed_name_full` column for filtering.
@@ -9,7 +66,10 @@ sql_query_task:
 
     You must always query all three tables unless the user’s intent explicitly excludes one.
 
-    Example output should follow the format below, adjusting keywords based on the user's query.
+    Follow the exact output format shown in the examples below,
+    adjusting the keywords to fit the user query.
+
+  agent: nl2sql_agent
 
   examples:
     - user_input: "Remote Part-Time Jobs for Freelancers in the Digital World"
@@ -38,4 +98,30 @@ sql_query_task:
            OR condensed_name_full ILIKE '%Freelancer%'
            OR condensed_name_full ILIKE '%Digital%';
 
-  agent: nl2sql_agent
+    - user_input: "Target users aged between 18-24, 25-34, and 35-44 who are interested in Basketball and College Basketball, have shown purchase intent for Basketball Equipment, and engage in Sports Betting or Virtual Betting, to increase sales of basketball-related sporting goods."
+      expected_output: |
+        -- adproduct
+        SELECT unique_id, name, tier_1, tier_2, tier_3
+        FROM adproduct
+        WHERE condensed_name_full ILIKE '%Basketball%'
+           OR condensed_name_full ILIKE '%College Basketball%'
+           OR condensed_name_full ILIKE '%Basketball Equipment%'
+           OR condensed_name_full ILIKE '%Sports Betting%'
+           OR condensed_name_full ILIKE '%Virtual Betting%';
+
+        -- audience
+        SELECT unique_id, condensed_name_1st_2nd_last_tier, tier_1, tier_2, tier_3, tier_4, tier_5, tier_6
+        FROM audience
+        WHERE condensed_name_full ILIKE '%18-24%'
+           OR condensed_name_full ILIKE '%25-34%'
+           OR condensed_name_full ILIKE '%35-44%'
+           OR condensed_name_full ILIKE '%Basketball%'
+           OR condensed_name_full ILIKE '%College Basketball%';
+
+        -- content
+        SELECT unique_id, name, taxonomy_type, tier_1, tier_2, tier_3, tier_4, extension, podcast_genres, ctv_genres
+        FROM content
+        WHERE condensed_name_full ILIKE '%Basketball%'
+           OR condensed_name_full ILIKE '%College Basketball%'
+           OR condensed_name_full ILIKE '%Sports Betting%'
+           OR condensed_name_full ILIKE '%Virtual Betting%';

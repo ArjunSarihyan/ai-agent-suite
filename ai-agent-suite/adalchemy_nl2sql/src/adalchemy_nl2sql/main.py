@@ -13,7 +13,7 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'Target users aged between 18-24, 25-34, and 35-44 who are interested in Basketball and College Basketball, have shown purchase intent for Basketball Equipment, and engage in Sports Betting or Virtual Betting, to increase sales of basketball-related sporting goods.',
+        'topic': 'Looking to target young adults who are passionate about eco-friendly travel, sustainable tourism, and adventure sports. The campaign focuses on users who prefer hiking, camping, and off-the-beaten-path destinations while showing interest in responsible travel gear and equipment.',
         'current_year': str(datetime.now().year)
     }
 

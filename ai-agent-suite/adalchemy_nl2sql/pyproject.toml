@@ -6,7 +6,9 @@ authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
     "crewai[tools]==0.120.1",
-    "duckdb>=0.9.2"
+    "duckdb>=0.9.2",
+    "faiss-cpu",                      # ✅ For semantic search
+    "sentence-transformers>=2.2.2"    # ✅ For embedding model
 ]
 
 [project.scripts]
