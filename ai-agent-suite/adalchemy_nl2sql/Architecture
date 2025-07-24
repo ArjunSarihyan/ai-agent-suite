@@ -1,0 +1,60 @@
++---------------------------+
+|       User Interface      |
+|   (Web App, Chatbot, CLI) |
++------------+--------------+
+             |
+             | User Natural Language Query
+             v
++---------------------------+
+|     Semantic Embedding    |
+|     (Text Encoder Model)  |
+|        - e.g., OpenAI     |
++------------+--------------+
+             |
+             | Embedding Vector (query embedding)
+             v
++---------------------------+
+|     Local Vector Database |
+|   (FAISS, Milvus, Weaviate)|
+|    - Stores taxonomy terms |
+|        as embeddings       |
++------------+--------------+
+             |
+             | Semantic Similarity Search
+             | (Find closest taxonomy keywords)
+             v
++---------------------------+
+|     Query Rewriting Agent |
+| - Takes user query +      |
+|   semantic matches        |
+| - Generates rewritten SQL |
+|   keywords filter query   |
++------------+--------------+
+             |
+             | Rewritten SQL Query Filters
+             v
++---------------------------+
+|        NL2SQL Engine      |
+| - Converts rewritten      |
+|   filters into SQL SELECT |
+| - Targets taxonomy.db     |
+| - Queries 3 tables:       |
+|   adproduct, audience,    |
+|   content                 |
++------------+--------------+
+             |
+             | SQL Query Results
+             v
++---------------------------+
+|     Results Aggregation   |
+| - Combines results from   |
+|   all 3 tables            |
+| - Formats for UI display  |
++------------+--------------+
+             |
+             | Query Results (JSON, Table, etc.)
+             v
++---------------------------+
+|      User Interface       |
+|       Displays results    |
++---------------------------+
