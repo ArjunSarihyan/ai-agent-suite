@@ -1,0 +1,38 @@
+C:.
+│   .env
+│   .env.example
+│   .gitignore
+│   Ad Product Taxonomy 2.0.tsv
+│   Audience Taxonomy 1.1.tsv
+│   Content Taxonomy 3.1.tsv
+│   pyproject.toml
+│   README.md
+│   temp_content.tsv
+│   uv.lock
+│
+├───knowledge
+│       taxonomy.db
+│       taxonomy.db.wal
+│       user_preference.txt
+│       __init__.py
+│
+├───src
+│   └───adalchemy_nl2sql
+│       │   crew.py
+│       │   main.py
+│       │   __init__.py
+│       │
+│       ├───config
+│       │       agents.yaml
+│       │       tasks.yaml
+│       │
+│       ├───tools
+│       │       custom_tool.py
+│       │       __init__.py
+│       │
+│       └───__pycache__
+│               crew.cpython-311.pyc
+│               main.cpython-311.pyc
+│               __init__.cpython-311.pyc
+│
+└───tests

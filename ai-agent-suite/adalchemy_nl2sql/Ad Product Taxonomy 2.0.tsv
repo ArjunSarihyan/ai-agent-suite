@@ -1,0 +1,584 @@
+Unique ID	Parent ID	taxonomy type	Name	Tier 1	Tier 2	Tier 3	condensed_name_full
+1000	1000.0	adproduct	Ad Safety Risk	Ad Safety Risk			Ad Safety Risk | Ad Safety Risk |
+1001		adproduct	Adult Products and Services	Adult Products and Services			Adult Products and Services | Adult Products and Services |
+1002		adproduct	Alcohol	Alcohol			Alcohol | Alcohol |
+1003	1002.0	adproduct	Bars	Alcohol	Bars		Bars | Alcohol | Bars
+1004	1002.0	adproduct	Beer	Alcohol	Beer		Beer | Alcohol | Beer
+1005	1002.0	adproduct	Hard Sodas, Seltzers, Alco Pops	Alcohol	Hard Sodas, Seltzers, Alco Pops		Hard Sodas, Seltzers, Alco Pops | Alcohol | Hard Sodas, Seltzers, Alco Pops
+1006	1002.0	adproduct	Spirits	Alcohol	Spirits		Spirits | Alcohol | Spirits
+1007	1002.0	adproduct	Wine	Alcohol	Wine		Wine | Alcohol | Wine
+1008		adproduct	Culture and Fine Arts	Culture and Fine Arts			Culture and Fine Arts | Culture and Fine Arts |
+1009	1008.0	adproduct	Museums and Galleries	Culture and Fine Arts	Museums and Galleries		Museums and Galleries | Culture and Fine Arts | Museums and Galleries
+1010		adproduct	Business and Industrial	Business and Industrial			Business and Industrial | Business and Industrial |
+1011	1010.0	adproduct	Advertising and Marketing	Business and Industrial	Advertising and Marketing		Advertising and Marketing | Business and Industrial | Advertising and Marketing
+1012	1010.0	adproduct	Business Services	Business and Industrial	Business Services		Business Services | Business and Industrial | Business Services
+1013	1012.0	adproduct	Consulting	Business and Industrial	Business Services	Consulting	Consulting | Business and Industrial | Business Services | Consulting
+1014	1012.0	adproduct	Employee Expense and Time Tracking Services	Business and Industrial	Business Services	Employee Expense and Time Tracking Services	Employee Expense and Time Tracking Services | Business and Industrial | Business Services | Employee Expense and Time Tracking Services
+1015	1012.0	adproduct	Event Planning	Business and Industrial	Business Services	Event Planning	Event Planning | Business and Industrial | Business Services | Event Planning
+1016	1012.0	adproduct	Human Resources and Recruiting	Business and Industrial	Business Services	Human Resources and Recruiting	Human Resources and Recruiting | Business and Industrial | Business Services | Human Resources and Recruiting
+1017	1012.0	adproduct	Information Technology Services	Business and Industrial	Business Services	Information Technology Services	Information Technology Services | Business and Industrial | Business Services | Information Technology Services
+1018	1012.0	adproduct	Laundry and Dry Cleaning Services	Business and Industrial	Business Services	Laundry and Dry Cleaning Services	Laundry and Dry Cleaning Services | Business and Industrial | Business Services | Laundry and Dry Cleaning Services
+1019	1012.0	adproduct	Logistics and Delivery	Business and Industrial	Business Services	Logistics and Delivery	Logistics and Delivery | Business and Industrial | Business Services | Logistics and Delivery
+1020	1012.0	adproduct	Office Equipment and Supplies	Business and Industrial	Business Services	Office Equipment and Supplies	Office Equipment and Supplies | Business and Industrial | Business Services | Office Equipment and Supplies
+1021	1012.0	adproduct	Photographers	Business and Industrial	Business Services	Photographers	Photographers | Business and Industrial | Business Services | Photographers
+1022	1012.0	adproduct	Printing/Fax/WiFi Services	Business and Industrial	Business Services	Printing/Fax/WiFi Services	Printing/Fax/WiFi Services | Business and Industrial | Business Services | Printing/Fax/WiFi Services
+1023	1012.0	adproduct	Public Relations and Strategic Communication	Business and Industrial	Business Services	Public Relations and Strategic Communication	Public Relations and Strategic Communication | Business and Industrial | Business Services | Public Relations and Strategic Communication
+1024	1012.0	adproduct	Security and Protection	Business and Industrial	Business Services	Security and Protection	Security and Protection | Business and Industrial | Business Services | Security and Protection
+1025	1012.0	adproduct	Storage Facilities	Business and Industrial	Business Services	Storage Facilities	Storage Facilities | Business and Industrial | Business Services | Storage Facilities
+1026	1012.0	adproduct	Telecom Services	Business and Industrial	Business Services	Telecom Services	Telecom Services | Business and Industrial | Business Services | Telecom Services
+1027	1012.0	adproduct	Web Hosting and Cloud Computing	Business and Industrial	Business Services	Web Hosting and Cloud Computing	Web Hosting and Cloud Computing | Business and Industrial | Business Services | Web Hosting and Cloud Computing
+1028	1010.0	adproduct	Construction	Business and Industrial	Construction		Construction | Business and Industrial | Construction
+1029	1010.0	adproduct	Energy Industry	Business and Industrial	Energy Industry		Energy Industry | Business and Industrial | Energy Industry
+1030	1029.0	adproduct	Electric Power Industry	Business and Industrial	Energy Industry	Electric Power Industry	Electric Power Industry | Business and Industrial | Energy Industry | Electric Power Industry
+1031	1029.0	adproduct	Energy Services	Business and Industrial	Energy Industry	Energy Services	Energy Services | Business and Industrial | Energy Industry | Energy Services
+1032	1029.0	adproduct	Green Energy	Business and Industrial	Energy Industry	Green Energy	Green Energy | Business and Industrial | Energy Industry | Green Energy
+1033	1029.0	adproduct	Oil, Gas and Consumable Fuels	Business and Industrial	Energy Industry	Oil, Gas and Consumable Fuels	Oil, Gas and Consumable Fuels | Business and Industrial | Energy Industry | Oil, Gas and Consumable Fuels
+1034	1010.0	adproduct	Forestry and Logging	Business and Industrial	Forestry and Logging		Forestry and Logging | Business and Industrial | Forestry and Logging
+1035	1010.0	adproduct	Industrial Storage	Business and Industrial	Industrial Storage		Industrial Storage | Business and Industrial | Industrial Storage
+1036	1010.0	adproduct	Industrials	Business and Industrial	Industrials		Industrials | Business and Industrial | Industrials
+1037	1037.0	adproduct	Aerospace and Defense	Business and Industrial	Industrials	Aerospace and Defense	Aerospace and Defense | Business and Industrial | Industrials | Aerospace and Defense
+1038	1037.0	adproduct	Construction and Engineering	Business and Industrial	Industrials	Construction and Engineering	Construction and Engineering | Business and Industrial | Industrials | Construction and Engineering
+1039	1037.0	adproduct	Industrial Conglomerates	Business and Industrial	Industrials	Industrial Conglomerates	Industrial Conglomerates | Business and Industrial | Industrials | Industrial Conglomerates
+1040	1037.0	adproduct	Trading Companies and Distributors	Business and Industrial	Industrials	Trading Companies and Distributors	Trading Companies and Distributors | Business and Industrial | Industrials | Trading Companies and Distributors
+1041	1037.0	adproduct	Transportation	Business and Industrial	Industrials	Transportation	Transportation | Business and Industrial | Industrials | Transportation
+1042	1010.0	adproduct	Manufacturing	Business and Industrial	Manufacturing		Manufacturing | Business and Industrial | Manufacturing
+1043	1010.0	adproduct	Medical and Biotechnology	Business and Industrial	Medical and Biotechnology		Medical and Biotechnology | Business and Industrial | Medical and Biotechnology
+1044	1010.0	adproduct	Mining and Quarrying	Business and Industrial	Mining and Quarrying		Mining and Quarrying | Business and Industrial | Mining and Quarrying
+1045	1010.0	adproduct	Science and Laboratory	Business and Industrial	Science and Laboratory		Science and Laboratory | Business and Industrial | Science and Laboratory
+1046	1010.0	adproduct	Signage	Business and Industrial	Signage		Signage | Business and Industrial | Signage
+1047	1010.0	adproduct	Small Business	Business and Industrial	Small Business		Small Business | Business and Industrial | Small Business
+1048	1010.0	adproduct	Waste Disposal and Recycling	Business and Industrial	Waste Disposal and Recycling		Waste Disposal and Recycling | Business and Industrial | Waste Disposal and Recycling
+1049		adproduct	Cannabis	Cannabis			Cannabis | Cannabis |
+1050	1049.0	adproduct	Cannabis Consumables	Cannabis	Cannabis Consumables		Cannabis Consumables | Cannabis | Cannabis Consumables
+1051	1050.0	adproduct	Cannabis Drinks	Cannabis	Cannabis Consumables	Cannabis Drinks	Cannabis Drinks | Cannabis | Cannabis Consumables | Cannabis Drinks
+1052	1050.0	adproduct	Cannabis Edibles	Cannabis	Cannabis Consumables	Cannabis Edibles	Cannabis Edibles | Cannabis | Cannabis Consumables | Cannabis Edibles
+1053	1049.0	adproduct	Cannabis Equipment	Cannabis	Cannabis Equipment		Cannabis Equipment | Cannabis | Cannabis Equipment
+1054	1049.0	adproduct	Cannabis Stores	Cannabis	Cannabis Stores		Cannabis Stores | Cannabis | Cannabis Stores
+1055	1049.0	adproduct	Cannabis Stocks	Cannabis	Cannabis Stocks		Cannabis Stocks | Cannabis | Cannabis Stocks
+1056	1049.0	adproduct	CBD Consumables	Cannabis	CBD Consumables		CBD Consumables | Cannabis | CBD Consumables
+1057	1049.0	adproduct	CBD Topicals	Cannabis	CBD Topicals		CBD Topicals | Cannabis | CBD Topicals
+1058		adproduct	Clothing and Accessories	Clothing and Accessories			Clothing and Accessories | Clothing and Accessories |
+1059	1058.0	adproduct	Clothing	Clothing and Accessories	Clothing		Clothing | Clothing and Accessories | Clothing
+1060	1059.0	adproduct	Children's Clothing	Clothing and Accessories	Clothing	Children's Clothing	Children's Clothing | Clothing and Accessories | Clothing | Children's Clothing
+1061	1059.0	adproduct	Maternity Clothing	Clothing and Accessories	Clothing	Maternity Clothing	Maternity Clothing | Clothing and Accessories | Clothing | Maternity Clothing
+1062	1059.0	adproduct	Men's Clothing	Clothing and Accessories	Clothing	Men's Clothing	Men's Clothing | Clothing and Accessories | Clothing | Men's Clothing
+1063	1059.0	adproduct	Sportswear	Clothing and Accessories	Clothing	Sportswear	Sportswear | Clothing and Accessories | Clothing | Sportswear
+1064	1059.0	adproduct	Swimwear	Clothing and Accessories	Clothing	Swimwear	Swimwear | Clothing and Accessories | Clothing | Swimwear
+1065	1059.0	adproduct	Underwear and Lingerie	Clothing and Accessories	Clothing	Underwear and Lingerie	Underwear and Lingerie | Clothing and Accessories | Clothing | Underwear and Lingerie
+1066	1059.0	adproduct	Wedding Dresses/Bridal Wear/Tuxedos	Clothing and Accessories	Clothing	Wedding Dresses/Bridal Wear/Tuxedos	Wedding Dresses/Bridal Wear/Tuxedos | Clothing and Accessories | Clothing | Wedding Dresses/Bridal Wear/Tuxedos
+1067	1059.0	adproduct	Women's Clothing	Clothing and Accessories	Clothing	Women's Clothing	Women's Clothing | Clothing and Accessories | Clothing | Women's Clothing
+1068	1058.0	adproduct	Clothing Accessories	Clothing and Accessories	Clothing Accessories		Clothing Accessories | Clothing and Accessories | Clothing Accessories
+1069	1058.0	adproduct	Costumes and Accessories	Clothing and Accessories	Costumes and Accessories		Costumes and Accessories | Clothing and Accessories | Costumes and Accessories
+1070	1058.0	adproduct	Footwear	Clothing and Accessories	Footwear		Footwear | Clothing and Accessories | Footwear
+1071	1058.0	adproduct	Footwear Accessories	Clothing and Accessories	Footwear Accessories		Footwear Accessories | Clothing and Accessories | Footwear Accessories
+1072	1058.0	adproduct	Handbags and Wallets	Clothing and Accessories	Handbags and Wallets		Handbags and Wallets | Clothing and Accessories | Handbags and Wallets
+1073	1058.0	adproduct	Jewelry and Watches	Clothing and Accessories	Jewelry and Watches		Jewelry and Watches | Clothing and Accessories | Jewelry and Watches
+1074	1058.0	adproduct	Sunglasses	Clothing and Accessories	Sunglasses		Sunglasses | Clothing and Accessories | Sunglasses
+1075		adproduct	Collectables and Antiques	Collectables and Antiques			Collectables and Antiques | Collectables and Antiques |
+1076	1075.0	adproduct	Antiques	Collectables and Antiques	Antiques		Antiques | Collectables and Antiques | Antiques
+1077	1075.0	adproduct	Coins and Paper Money	Collectables and Antiques	Coins and Paper Money		Coins and Paper Money | Collectables and Antiques | Coins and Paper Money
+1078	1075.0	adproduct	Collectibles	Collectables and Antiques	Collectibles		Collectibles | Collectables and Antiques | Collectibles
+1079	1075.0	adproduct	Entertainment Memorabilia	Collectables and Antiques	Entertainment Memorabilia		Entertainment Memorabilia | Collectables and Antiques | Entertainment Memorabilia
+1080	1075.0	adproduct	Sports Memorabilia and Trading Cards	Collectables and Antiques	Sports Memorabilia and Trading Cards		Sports Memorabilia and Trading Cards | Collectables and Antiques | Sports Memorabilia and Trading Cards
+1081	1075.0	adproduct	Stamps	Collectables and Antiques	Stamps		Stamps | Collectables and Antiques | Stamps
+1082		adproduct	Computer Software	Computer Software			Computer Software | Computer Software |
+1083	1082.0	adproduct	Browser Extensions	Computer Software	Browser Extensions		Browser Extensions | Computer Software | Browser Extensions
+1084	1082.0	adproduct	Downloadable Utilities	Computer Software	Downloadable Utilities		Downloadable Utilities | Computer Software | Downloadable Utilities
+1085	1082.0	adproduct	Enterprise Computer Software	Computer Software	Enterprise Computer Software		Enterprise Computer Software | Computer Software | Enterprise Computer Software
+1086	1082.0	adproduct	Personal Computer Software	Computer Software	Personal Computer Software		Personal Computer Software | Computer Software | Personal Computer Software
+1087	1082.0	adproduct	Toolbars	Computer Software	Toolbars		Toolbars | Computer Software | Toolbars
+1088		adproduct	Cosmetic Services	Cosmetic Services			Cosmetic Services | Cosmetic Services |
+1089	1088.0	adproduct	Beauty Salons	Cosmetic Services	Beauty Salons		Beauty Salons | Cosmetic Services | Beauty Salons
+1090	1088.0	adproduct	Hair Salons	Cosmetic Services	Hair Salons		Hair Salons | Cosmetic Services | Hair Salons
+1091	1088.0	adproduct	Hair Removal	Cosmetic Services	Hair Removal		Hair Removal | Cosmetic Services | Hair Removal
+1092	1088.0	adproduct	Hair Restoration	Cosmetic Services	Hair Restoration		Hair Restoration | Cosmetic Services | Hair Restoration
+1093	1088.0	adproduct	Nail Salons	Cosmetic Services	Nail Salons		Nail Salons | Cosmetic Services | Nail Salons
+1094	1088.0	adproduct	Med Spas	Cosmetic Services	Med Spas		Med Spas | Cosmetic Services | Med Spas
+1095	1088.0	adproduct	Piercing and Tattooing	Cosmetic Services	Piercing and Tattooing		Piercing and Tattooing | Cosmetic Services | Piercing and Tattooing
+1096	1088.0	adproduct	Tanning Salons	Cosmetic Services	Tanning Salons		Tanning Salons | Cosmetic Services | Tanning Salons
+1097		adproduct	Consumer Electronics	Consumer Electronics			Consumer Electronics | Consumer Electronics |
+1098	1097.0	adproduct	Arcade Equipment	Consumer Electronics	Arcade Equipment		Arcade Equipment | Consumer Electronics | Arcade Equipment
+1099	1097.0	adproduct	Camcorders	Consumer Electronics	Camcorders		Camcorders | Consumer Electronics | Camcorders
+1100	1097.0	adproduct	Cameras and Photo	Consumer Electronics	Cameras and Photo		Cameras and Photo | Consumer Electronics | Cameras and Photo
+1101	1100.0	adproduct	Camera and Photo Accessories	Consumer Electronics	Cameras and Photo	Camera and Photo Accessories	Camera and Photo Accessories | Consumer Electronics | Cameras and Photo | Camera and Photo Accessories
+1102	1100.0	adproduct	Cameras	Consumer Electronics	Cameras and Photo	Cameras	Cameras | Consumer Electronics | Cameras and Photo | Cameras
+1103	1100.0	adproduct	Photo Applications	Consumer Electronics	Cameras and Photo	Photo Applications	Photo Applications | Consumer Electronics | Cameras and Photo | Photo Applications
+1104	1097.0	adproduct	Circuit Boards and Components	Consumer Electronics	Circuit Boards and Components		Circuit Boards and Components | Consumer Electronics | Circuit Boards and Components
+1105	1097.0	adproduct	Communications Electronics	Consumer Electronics	Communications Electronics		Communications Electronics | Consumer Electronics | Communications Electronics
+1106	1097.0	adproduct	Computers	Consumer Electronics	Computers		Computers | Consumer Electronics | Computers
+1107	1106.0	adproduct	Laptops	Consumer Electronics	Computers	Laptops	Laptops | Consumer Electronics | Computers | Laptops
+1108	1106.0	adproduct	Desktops	Consumer Electronics	Computers	Desktops	Desktops | Consumer Electronics | Computers | Desktops
+1109	1097.0	adproduct	E-Readers	Consumer Electronics	E-Readers		E-Readers | Consumer Electronics | E-Readers
+1110	1097.0	adproduct	Electronics Accessories	Consumer Electronics	Electronics Accessories		Electronics Accessories | Consumer Electronics | Electronics Accessories
+1111	1097.0	adproduct	Headphones	Consumer Electronics	Headphones		Headphones | Consumer Electronics | Headphones
+1112	1097.0	adproduct	Home Theater Systems	Consumer Electronics	Home Theater Systems		Home Theater Systems | Consumer Electronics | Home Theater Systems
+1113	1097.0	adproduct	Marine Electronics	Consumer Electronics	Marine Electronics		Marine Electronics | Consumer Electronics | Marine Electronics
+1114	1097.0	adproduct	Mobile Phones and Accessories	Consumer Electronics	Mobile Phones and Accessories		Mobile Phones and Accessories | Consumer Electronics | Mobile Phones and Accessories
+1115	1097.0	adproduct	Networking	Consumer Electronics	Networking		Networking | Consumer Electronics | Networking
+1116	1097.0	adproduct	Printers/Copiers/Scanners/Fax	Consumer Electronics	Printers/Copiers/Scanners/Fax		Printers/Copiers/Scanners/Fax | Consumer Electronics | Printers/Copiers/Scanners/Fax
+1117	1097.0	adproduct	Security Devices	Consumer Electronics	Security Devices		Security Devices | Consumer Electronics | Security Devices
+1118	1097.0	adproduct	Tablets	Consumer Electronics	Tablets		Tablets | Consumer Electronics | Tablets
+1119	1097.0	adproduct	Televisions	Consumer Electronics	Televisions		Televisions | Consumer Electronics | Televisions
+1120	1097.0	adproduct	Video Games 	Consumer Electronics	Video Games		Video Games  | Consumer Electronics | Video Games
+1121	1097.0	adproduct	Video Games and Consoles	Consumer Electronics	Video Game Consoles		Video Games and Consoles | Consumer Electronics | Video Game Consoles
+1122	1097.0	adproduct	Video Game Console Accessories	Consumer Electronics	Video Game Console Accessories		Video Game Console Accessories | Consumer Electronics | Video Game Console Accessories
+1123		adproduct	Consumer Packaged Goods	Consumer Packaged Goods			Consumer Packaged Goods | Consumer Packaged Goods |
+1124	1123.0	adproduct	Baby and Toddler Products	Consumer Packaged Goods	Baby and Toddler Products		Baby and Toddler Products | Consumer Packaged Goods | Baby and Toddler Products
+1125	1124.0	adproduct	Diapers	Consumer Packaged Goods	Baby and Toddler Products	Diapers	Diapers | Consumer Packaged Goods | Baby and Toddler Products | Diapers
+1126	1124.0	adproduct	Nursing and Feeding Products	Consumer Packaged Goods	Baby and Toddler Products	Nursing and Feeding Products	Nursing and Feeding Products | Consumer Packaged Goods | Baby and Toddler Products | Nursing and Feeding Products
+1127	1123.0	adproduct	Back to School Supplies	Consumer Packaged Goods	Back to School Supplies		Back to School Supplies | Consumer Packaged Goods | Back to School Supplies
+1128	1123.0	adproduct	Barbeque	Consumer Packaged Goods	Barbeque		Barbeque | Consumer Packaged Goods | Barbeque
+1129	1128.0	adproduct	Charcoal	Consumer Packaged Goods	Barbeque	Charcoal	Charcoal | Consumer Packaged Goods | Barbeque | Charcoal
+1130	1128.0	adproduct	Charcoal Lighter Fluids	Consumer Packaged Goods	Barbeque	Charcoal Lighter Fluids	Charcoal Lighter Fluids | Consumer Packaged Goods | Barbeque | Charcoal Lighter Fluids
+1131	1123.0	adproduct	Beverages	Consumer Packaged Goods	Beverages		Beverages | Consumer Packaged Goods | Beverages
+1132	1131.0	adproduct	Carbonated Soft Drinks	Consumer Packaged Goods	Beverages	Carbonated Soft Drinks	Carbonated Soft Drinks | Consumer Packaged Goods | Beverages | Carbonated Soft Drinks
+1133	1131.0	adproduct	Coffee and Tea	Consumer Packaged Goods	Beverages	Coffee and Tea	Coffee and Tea | Consumer Packaged Goods | Beverages | Coffee and Tea
+1134	1131.0	adproduct	Drink Mixes	Consumer Packaged Goods	Beverages	Drink Mixes	Drink Mixes | Consumer Packaged Goods | Beverages | Drink Mixes
+1135	1131.0	adproduct	Juices	Consumer Packaged Goods	Beverages	Juices	Juices | Consumer Packaged Goods | Beverages | Juices
+1136	1131.0	adproduct	Sports/Energy Drinks	Consumer Packaged Goods	Beverages	Sports/Energy Drinks	Sports/Energy Drinks | Consumer Packaged Goods | Beverages | Sports/Energy Drinks
+1137	1131.0	adproduct	Water	Consumer Packaged Goods	Beverages	Water	Water | Consumer Packaged Goods | Beverages | Water
+1138	1123.0	adproduct	Cosmetics	Consumer Packaged Goods	Cosmetics		Cosmetics | Consumer Packaged Goods | Cosmetics
+1139	1138.0	adproduct	Cosmetics Accessories	Consumer Packaged Goods	Cosmetics	Cosmetics Accessories	Cosmetics Accessories | Consumer Packaged Goods | Cosmetics | Cosmetics Accessories
+1140	1138.0	adproduct	Cosmetics-Nail	Consumer Packaged Goods	Cosmetics	Cosmetics-Nail	Cosmetics-Nail | Consumer Packaged Goods | Cosmetics | Cosmetics-Nail
+1141	1138.0	adproduct	Eye	Consumer Packaged Goods	Cosmetics	Eye	Eye | Consumer Packaged Goods | Cosmetics | Eye
+1142	1138.0	adproduct	Facial	Consumer Packaged Goods	Cosmetics	Facial	Facial | Consumer Packaged Goods | Cosmetics | Facial
+1143	1138.0	adproduct	Lip	Consumer Packaged Goods	Cosmetics	Lip	Lip | Consumer Packaged Goods | Cosmetics | Lip
+1144	1138.0	adproduct	Storage	Consumer Packaged Goods	Cosmetics	Storage	Storage | Consumer Packaged Goods | Cosmetics | Storage
+1145	1123.0	adproduct	Disposable Tableware	Consumer Packaged Goods	Disposable Tableware		Disposable Tableware | Consumer Packaged Goods | Disposable Tableware
+1146	1145.0	adproduct	Cups and Plates	Consumer Packaged Goods	Disposable Tableware	Cups and Plates	Cups and Plates | Consumer Packaged Goods | Disposable Tableware | Cups and Plates
+1147	1145.0	adproduct	Disposable Tableware	Consumer Packaged Goods	Disposable Tableware	Disposable Tableware	Disposable Tableware | Consumer Packaged Goods | Disposable Tableware | Disposable Tableware
+1148	1123.0	adproduct	Foils, Wraps, and Bags	Consumer Packaged Goods	Foils, Wraps, and Bags		Foils, Wraps, and Bags | Consumer Packaged Goods | Foils, Wraps, and Bags
+1149	1148.0	adproduct	Foil Pans	Consumer Packaged Goods	Foils, Wraps, and Bags	Foil Pans	Foil Pans | Consumer Packaged Goods | Foils, Wraps, and Bags | Foil Pans
+1150	1148.0	adproduct	Foils and Wraps	Consumer Packaged Goods	Foils, Wraps, and Bags	Foils and Wraps	Foils and Wraps | Consumer Packaged Goods | Foils, Wraps, and Bags | Foils and Wraps
+1151	1148.0	adproduct	Food and Trash Bags	Consumer Packaged Goods	Foils, Wraps, and Bags	Food and Trash Bags	Food and Trash Bags | Consumer Packaged Goods | Foils, Wraps, and Bags | Food and Trash Bags
+1152	1123.0	adproduct	Fragrance	Consumer Packaged Goods	Fragrance		Fragrance | Consumer Packaged Goods | Fragrance
+1153	1152.0	adproduct	Fragrances - Women's	Consumer Packaged Goods	Fragrance	Fragrances - Women's	Fragrances - Women's | Consumer Packaged Goods | Fragrance | Fragrances - Women's
+1154	1152.0	adproduct	Shaving Lotion/Men's Fragrance	Consumer Packaged Goods	Fragrance	Shaving Lotion/Men's Fragrance	Shaving Lotion/Men's Fragrance | Consumer Packaged Goods | Fragrance | Shaving Lotion/Men's Fragrance
+1155	1123.0	adproduct	Frozen	Consumer Packaged Goods	Frozen		Frozen | Consumer Packaged Goods | Frozen
+1156	1155.0	adproduct	Frozen Baked Goods	Consumer Packaged Goods	Frozen	Frozen Baked Goods	Frozen Baked Goods | Consumer Packaged Goods | Frozen | Frozen Baked Goods
+1157	1155.0	adproduct	Frozen Beverages	Consumer Packaged Goods	Frozen	Frozen Beverages	Frozen Beverages | Consumer Packaged Goods | Frozen | Frozen Beverages
+1158	1155.0	adproduct	Frozen Desserts	Consumer Packaged Goods	Frozen	Frozen Desserts	Frozen Desserts | Consumer Packaged Goods | Frozen | Frozen Desserts
+1159	1155.0	adproduct	Frozen Fruits and Vegetables	Consumer Packaged Goods	Frozen	Frozen Fruits and Vegetables	Frozen Fruits and Vegetables | Consumer Packaged Goods | Frozen | Frozen Fruits and Vegetables
+1160	1155.0	adproduct	Frozen Juices	Consumer Packaged Goods	Frozen	Frozen Juices	Frozen Juices | Consumer Packaged Goods | Frozen | Frozen Juices
+1161	1155.0	adproduct	Frozen Meals	Consumer Packaged Goods	Frozen	Frozen Meals	Frozen Meals | Consumer Packaged Goods | Frozen | Frozen Meals
+1162	1155.0	adproduct	Frozen Meat/Poultry/Seafood	Consumer Packaged Goods	Frozen	Frozen Meat/Poultry/Seafood	Frozen Meat/Poultry/Seafood | Consumer Packaged Goods | Frozen | Frozen Meat/Poultry/Seafood
+1163	1155.0	adproduct	Frozen Snacks	Consumer Packaged Goods	Frozen	Frozen Snacks	Frozen Snacks | Consumer Packaged Goods | Frozen | Frozen Snacks
+1164	1155.0	adproduct	Other Frozen	Consumer Packaged Goods	Frozen	Other Frozen	Other Frozen | Consumer Packaged Goods | Frozen | Other Frozen
+1165	1123.0	adproduct	General Food	Consumer Packaged Goods	General Food		General Food | Consumer Packaged Goods | General Food
+1166	1165.0	adproduct	Baby Food	Consumer Packaged Goods	General Food	Baby Food	Baby Food | Consumer Packaged Goods | General Food | Baby Food
+1167	1165.0	adproduct	Bakery	Consumer Packaged Goods	General Food	Bakery	Bakery | Consumer Packaged Goods | General Food | Bakery
+1168	1165.0	adproduct	Baking	Consumer Packaged Goods	General Food	Baking	Baking | Consumer Packaged Goods | General Food | Baking
+1169	1165.0	adproduct	Breakfast	Consumer Packaged Goods	General Food	Breakfast	Breakfast | Consumer Packaged Goods | General Food | Breakfast
+1170	1165.0	adproduct	Candy	Consumer Packaged Goods	General Food	Candy	Candy | Consumer Packaged Goods | General Food | Candy
+1171	1165.0	adproduct	Condiments and Sauces	Consumer Packaged Goods	General Food	Condiments and Sauces	Condiments and Sauces | Consumer Packaged Goods | General Food | Condiments and Sauces
+1172	1165.0	adproduct	Cookies and Crackers	Consumer Packaged Goods	General Food	Cookies and Crackers	Cookies and Crackers | Consumer Packaged Goods | General Food | Cookies and Crackers
+1173	1165.0	adproduct	Fruit	Consumer Packaged Goods	General Food	Fruit	Fruit | Consumer Packaged Goods | General Food | Fruit
+1174	1165.0	adproduct	Meals	Consumer Packaged Goods	General Food	Meals	Meals | Consumer Packaged Goods | General Food | Meals
+1175	1165.0	adproduct	Snacks	Consumer Packaged Goods	General Food	Snacks	Snacks | Consumer Packaged Goods | General Food | Snacks
+1176	1165.0	adproduct	Vegetables	Consumer Packaged Goods	General Food	Vegetables	Vegetables | Consumer Packaged Goods | General Food | Vegetables
+1177	1123.0	adproduct	General Merchandise	Consumer Packaged Goods	General Merchandise		General Merchandise | Consumer Packaged Goods | General Merchandise
+1178	1123.0	adproduct	Grooming Supplies	Consumer Packaged Goods	Grooming Supplies		Grooming Supplies | Consumer Packaged Goods | Grooming Supplies
+1179	1123.0	adproduct	Hair Care	Consumer Packaged Goods	Hair Care		Hair Care | Consumer Packaged Goods | Hair Care
+1180	1179.0	adproduct	Hair Accessories	Consumer Packaged Goods	Hair Care	Hair Accessories	Hair Accessories | Consumer Packaged Goods | Hair Care | Hair Accessories
+1181	1179.0	adproduct	Hair Coloring	Consumer Packaged Goods	Hair Care	Hair Coloring	Hair Coloring | Consumer Packaged Goods | Hair Care | Hair Coloring
+1182	1179.0	adproduct	Hair Conditioner	Consumer Packaged Goods	Hair Care	Hair Conditioner	Hair Conditioner | Consumer Packaged Goods | Hair Care | Hair Conditioner
+1183	1179.0	adproduct	Hair Growth Products	Consumer Packaged Goods	Hair Care	Hair Growth Products	Hair Growth Products | Consumer Packaged Goods | Hair Care | Hair Growth Products
+1184	1179.0	adproduct	Hair Spray/Spritz	Consumer Packaged Goods	Hair Care	Hair Spray/Spritz	Hair Spray/Spritz | Consumer Packaged Goods | Hair Care | Hair Spray/Spritz
+1185	1179.0	adproduct	Hair Styling Gel/Mousse	Consumer Packaged Goods	Hair Care	Hair Styling Gel/Mousse	Hair Styling Gel/Mousse | Consumer Packaged Goods | Hair Care | Hair Styling Gel/Mousse
+1186	1179.0	adproduct	Home Permanent/Relaxer Kits	Consumer Packaged Goods	Hair Care	Home Permanent/Relaxer Kits	Home Permanent/Relaxer Kits | Consumer Packaged Goods | Hair Care | Home Permanent/Relaxer Kits
+1187	1179.0	adproduct	Shampoo	Consumer Packaged Goods	Hair Care	Shampoo	Shampoo | Consumer Packaged Goods | Hair Care | Shampoo
+1188	1123.0	adproduct	HFSS Products [High Fat, Sugar, Salt]	Consumer Packaged Goods	HFSS Products [High Fat, Sugar, Salt]		HFSS Products [High Fat, Sugar, Salt] | Consumer Packaged Goods | HFSS Products [High Fat, Sugar, Salt]
+1189	1123.0	adproduct	Home Care	Consumer Packaged Goods	Home Care		Home Care | Consumer Packaged Goods | Home Care
+1190	1189.0	adproduct	Household Cleaning	Consumer Packaged Goods	Home Care	Household Cleaning	Household Cleaning | Consumer Packaged Goods | Home Care | Household Cleaning
+1191	1189.0	adproduct	Laundry	Consumer Packaged Goods	Home Care	Laundry	Laundry | Consumer Packaged Goods | Home Care | Laundry
+1192	1123.0	adproduct	Hosiery	Consumer Packaged Goods	Hosiery		Hosiery | Consumer Packaged Goods | Hosiery
+1193	1192.0	adproduct	Pantyhose/Nylons	Consumer Packaged Goods	Hosiery	Pantyhose/Nylons	Pantyhose/Nylons | Consumer Packaged Goods | Hosiery | Pantyhose/Nylons
+1194	1192.0	adproduct	Socks	Consumer Packaged Goods	Hosiery	Socks	Socks | Consumer Packaged Goods | Hosiery | Socks
+1195	1192.0	adproduct	Tights	Consumer Packaged Goods	Hosiery	Tights	Tights | Consumer Packaged Goods | Hosiery | Tights
+1196	1123.0	adproduct	Household/Plastics/Storage	Consumer Packaged Goods	Household/Plastics/Storage		Household/Plastics/Storage | Consumer Packaged Goods | Household/Plastics/Storage
+1197	1196.0	adproduct	Bottles	Consumer Packaged Goods	Household/Plastics/Storage	Bottles	Bottles | Consumer Packaged Goods | Household/Plastics/Storage | Bottles
+1198	1196.0	adproduct	Drinkware	Consumer Packaged Goods	Household/Plastics/Storage	Drinkware	Drinkware | Consumer Packaged Goods | Household/Plastics/Storage | Drinkware
+1199	1196.0	adproduct	Household Plastics	Consumer Packaged Goods	Household/Plastics/Storage	Household Plastics	Household Plastics | Consumer Packaged Goods | Household/Plastics/Storage | Household Plastics
+1200	1196.0	adproduct	Kitchen Storage	Consumer Packaged Goods	Household/Plastics/Storage	Kitchen Storage	Kitchen Storage | Consumer Packaged Goods | Household/Plastics/Storage | Kitchen Storage
+1201	1123.0	adproduct	Meal Kits	Consumer Packaged Goods	Meal Kits		Meal Kits | Consumer Packaged Goods | Meal Kits
+1202	1123.0	adproduct	Miscellaneous General Merch	Consumer Packaged Goods	Miscellaneous General Merch		Miscellaneous General Merch | Consumer Packaged Goods | Miscellaneous General Merch
+1203	1123.0	adproduct	Office/School Supplies	Consumer Packaged Goods	Office/School Supplies		Office/School Supplies | Consumer Packaged Goods | Office/School Supplies
+1204	1203.0	adproduct	Children's Art Supplies	Consumer Packaged Goods	Office/School Supplies	Children's Art Supplies	Children's Art Supplies | Consumer Packaged Goods | Office/School Supplies | Children's Art Supplies
+1205	1203.0	adproduct	Computer Disks Frmtd/UnFrmtd	Consumer Packaged Goods	Office/School Supplies	Computer Disks Frmtd/UnFrmtd	Computer Disks Frmtd/UnFrmtd | Consumer Packaged Goods | Office/School Supplies | Computer Disks Frmtd/UnFrmtd
+1206	1203.0	adproduct	Office Products	Consumer Packaged Goods	Office/School Supplies	Office Products	Office Products | Consumer Packaged Goods | Office/School Supplies | Office Products
+1207	1203.0	adproduct	Writing Instruments	Consumer Packaged Goods	Office/School Supplies	Writing Instruments	Writing Instruments | Consumer Packaged Goods | Office/School Supplies | Writing Instruments
+1208	1123.0	adproduct	Over the Counter Medication	Consumer Packaged Goods	Over the Counter Medication		Over the Counter Medication | Consumer Packaged Goods | Over the Counter Medication
+1209	1123.0	adproduct	Paper Products	Consumer Packaged Goods	Paper Products		Paper Products | Consumer Packaged Goods | Paper Products
+1210	1209.0	adproduct	Facial Tissue	Consumer Packaged Goods	Paper Products	Facial Tissue	Facial Tissue | Consumer Packaged Goods | Paper Products | Facial Tissue
+1211	1209.0	adproduct	Paper Napkins	Consumer Packaged Goods	Paper Products	Paper Napkins	Paper Napkins | Consumer Packaged Goods | Paper Products | Paper Napkins
+1212	1209.0	adproduct	Paper Towels	Consumer Packaged Goods	Paper Products	Paper Towels	Paper Towels | Consumer Packaged Goods | Paper Products | Paper Towels
+1213	1209.0	adproduct	Toilet Tissue	Consumer Packaged Goods	Paper Products	Toilet Tissue	Toilet Tissue | Consumer Packaged Goods | Paper Products | Toilet Tissue
+1214	1123.0	adproduct	Personal Care	Consumer Packaged Goods	Personal Care		Personal Care | Consumer Packaged Goods | Personal Care
+1215	1123.0	adproduct	Personal Cleansing	Consumer Packaged Goods	Personal Cleansing		Personal Cleansing | Consumer Packaged Goods | Personal Cleansing
+1216	1215.0	adproduct	Bath Products	Consumer Packaged Goods	Personal Cleansing	Bath Products	Bath Products | Consumer Packaged Goods | Personal Cleansing | Bath Products
+1217	1215.0	adproduct	Bath/Body Scrubbers/Massagers	Consumer Packaged Goods	Personal Cleansing	Bath/Body Scrubbers/Massagers	Bath/Body Scrubbers/Massagers | Consumer Packaged Goods | Personal Cleansing | Bath/Body Scrubbers/Massagers
+1218	1215.0	adproduct	Deodorant	Consumer Packaged Goods	Personal Cleansing	Deodorant	Deodorant | Consumer Packaged Goods | Personal Cleansing | Deodorant
+1219	1215.0	adproduct	Moist Towelettes	Consumer Packaged Goods	Personal Cleansing	Moist Towelettes	Moist Towelettes | Consumer Packaged Goods | Personal Cleansing | Moist Towelettes
+1220	1215.0	adproduct	Soap	Consumer Packaged Goods	Personal Cleansing	Soap	Soap | Consumer Packaged Goods | Personal Cleansing | Soap
+1221	1123.0	adproduct	Pest Control	Consumer Packaged Goods	Pest Control		Pest Control | Consumer Packaged Goods | Pest Control
+1222	1221.0	adproduct	Outdoor Insect/Rodent Control Chem	Consumer Packaged Goods	Pest Control	Outdoor Insect/Rodent Control Chem	Outdoor Insect/Rodent Control Chem | Consumer Packaged Goods | Pest Control | Outdoor Insect/Rodent Control Chem
+1223	1221.0	adproduct	Pest Control	Consumer Packaged Goods	Pest Control	Pest Control	Pest Control | Consumer Packaged Goods | Pest Control | Pest Control
+1224	1123.0	adproduct	Pet Care	Consumer Packaged Goods	Pet Care		Pet Care | Consumer Packaged Goods | Pet Care
+1225	1224.0	adproduct	Cat/Dog Litter	Consumer Packaged Goods	Pet Care	Cat/Dog Litter	Cat/Dog Litter | Consumer Packaged Goods | Pet Care | Cat/Dog Litter
+1226	1224.0	adproduct	Pet Food	Consumer Packaged Goods	Pet Care	Pet Food	Pet Food | Consumer Packaged Goods | Pet Care | Pet Food
+1227	1224.0	adproduct	Pet Supplies	Consumer Packaged Goods	Pet Care	Pet Supplies	Pet Supplies | Consumer Packaged Goods | Pet Care | Pet Supplies
+1228	1224.0	adproduct	Pet Treats	Consumer Packaged Goods	Pet Care	Pet Treats	Pet Treats | Consumer Packaged Goods | Pet Care | Pet Treats
+1229	1123.0	adproduct	Refrigerated	Consumer Packaged Goods	Refrigerated		Refrigerated | Consumer Packaged Goods | Refrigerated
+1230	1229.0	adproduct	Dairy	Consumer Packaged Goods	Refrigerated	Dairy	Dairy | Consumer Packaged Goods | Refrigerated | Dairy
+1231	1229.0	adproduct	Refrigerated Baked Goods	Consumer Packaged Goods	Refrigerated	Refrigerated Baked Goods	Refrigerated Baked Goods | Consumer Packaged Goods | Refrigerated | Refrigerated Baked Goods
+1232	1229.0	adproduct	Refrigerated Beverages	Consumer Packaged Goods	Refrigerated	Refrigerated Beverages	Refrigerated Beverages | Consumer Packaged Goods | Refrigerated | Refrigerated Beverages
+1233	1229.0	adproduct	Refrigerated Condiments	Consumer Packaged Goods	Refrigerated	Refrigerated Condiments	Refrigerated Condiments | Consumer Packaged Goods | Refrigerated | Refrigerated Condiments
+1234	1229.0	adproduct	Refrigerated Desserts	Consumer Packaged Goods	Refrigerated	Refrigerated Desserts	Refrigerated Desserts | Consumer Packaged Goods | Refrigerated | Refrigerated Desserts
+1235	1229.0	adproduct	Refrigerated Dough	Consumer Packaged Goods	Refrigerated	Refrigerated Dough	Refrigerated Dough | Consumer Packaged Goods | Refrigerated | Refrigerated Dough
+1236	1229.0	adproduct	Refrigerated Meals	Consumer Packaged Goods	Refrigerated	Refrigerated Meals	Refrigerated Meals | Consumer Packaged Goods | Refrigerated | Refrigerated Meals
+1237	1229.0	adproduct	Refrigerated Meats	Consumer Packaged Goods	Refrigerated	Refrigerated Meats	Refrigerated Meats | Consumer Packaged Goods | Refrigerated | Refrigerated Meats
+1238	1229.0	adproduct	Refrigerated Miscellaneous	Consumer Packaged Goods	Refrigerated	Refrigerated Miscellaneous	Refrigerated Miscellaneous | Consumer Packaged Goods | Refrigerated | Refrigerated Miscellaneous
+1239	1123.0	adproduct	Religious Items	Consumer Packaged Goods	Religious Items		Religious Items | Consumer Packaged Goods | Religious Items
+1240	1123.0	adproduct	Shaving	Consumer Packaged Goods	Shaving		Shaving | Consumer Packaged Goods | Shaving
+1241	1240.0	adproduct	Blades	Consumer Packaged Goods	Shaving	Blades	Blades | Consumer Packaged Goods | Shaving | Blades
+1242	1240.0	adproduct	Razors	Consumer Packaged Goods	Shaving	Razors	Razors | Consumer Packaged Goods | Shaving | Razors
+1243	1240.0	adproduct	Shaving Cream	Consumer Packaged Goods	Shaving	Shaving Cream	Shaving Cream | Consumer Packaged Goods | Shaving | Shaving Cream
+1244	1123.0	adproduct	Skin Care	Consumer Packaged Goods	Skin Care		Skin Care | Consumer Packaged Goods | Skin Care
+1245	1244.0	adproduct	Hand and Body Lotion	Consumer Packaged Goods	Skin Care	Hand and Body Lotion	Hand and Body Lotion | Consumer Packaged Goods | Skin Care | Hand and Body Lotion
+1246	1244.0	adproduct	Skin Care	Consumer Packaged Goods	Skin Care	Skin Care	Skin Care | Consumer Packaged Goods | Skin Care | Skin Care
+1247	1244.0	adproduct	Suntan Products	Consumer Packaged Goods	Skin Care	Suntan Products	Suntan Products | Consumer Packaged Goods | Skin Care | Suntan Products
+1248	1123.0	adproduct	Toys and Games	Consumer Packaged Goods	Toys and Games		Toys and Games | Consumer Packaged Goods | Toys and Games
+1249	1248.0	adproduct	Games	Consumer Packaged Goods	Toys and Games	Games	Games | Consumer Packaged Goods | Toys and Games | Games
+1250	1248.0	adproduct	Outdoor Play Equipment	Consumer Packaged Goods	Toys and Games	Outdoor Play Equipment	Outdoor Play Equipment | Consumer Packaged Goods | Toys and Games | Outdoor Play Equipment
+1251	1248.0	adproduct	Puzzles	Consumer Packaged Goods	Toys and Games	Puzzles	Puzzles | Consumer Packaged Goods | Toys and Games | Puzzles
+1252	1248.0	adproduct	Toys	Consumer Packaged Goods	Toys and Games	Toys	Toys | Consumer Packaged Goods | Toys and Games | Toys
+1253	1123.0	adproduct	Vitamins and Supplements	Consumer Packaged Goods	Vitamins and Supplements		Vitamins and Supplements | Consumer Packaged Goods | Vitamins and Supplements
+1254	1253.0	adproduct	Digestive Supplements	Consumer Packaged Goods	Vitamins and Supplements	Digestive Supplements	Digestive Supplements | Consumer Packaged Goods | Vitamins and Supplements | Digestive Supplements
+1255	1253.0	adproduct	Weightloss Supplements	Consumer Packaged Goods	Vitamins and Supplements	Weightloss Supplements	Weightloss Supplements | Consumer Packaged Goods | Vitamins and Supplements | Weightloss Supplements
+1256	1123.0	adproduct	Water Treatment	Consumer Packaged Goods	Water Treatment		Water Treatment | Consumer Packaged Goods | Water Treatment
+1257	1256.0	adproduct	Water Filter/Devices	Consumer Packaged Goods	Water Treatment	Water Filter/Devices	Water Filter/Devices | Consumer Packaged Goods | Water Treatment | Water Filter/Devices
+1258	1256.0	adproduct	Water Softeners/Treatment	Consumer Packaged Goods	Water Treatment	Water Softeners/Treatment	Water Softeners/Treatment | Consumer Packaged Goods | Water Treatment | Water Softeners/Treatment
+1259		adproduct	Dating				Dating |  |
+1260	1259.0	adproduct	Casual Relationships	Dating	Casual Relationships		Casual Relationships | Dating | Casual Relationships
+1261	1259.0	adproduct	Serious Relationships	Dating	Serious Relationships		Serious Relationships | Dating | Serious Relationships
+1262		adproduct	Debated Sensitive Social Issue	Debated Sensitive Social Issue			Debated Sensitive Social Issue | Debated Sensitive Social Issue |
+1263		adproduct	Durable Goods	Durable Goods			Durable Goods | Durable Goods |
+1264	1263.0	adproduct	Electronics/Photography	Durable Goods	Electronics/Photography		Electronics/Photography | Durable Goods | Electronics/Photography
+1265	1264.0	adproduct	Batteries	Durable Goods	Electronics/Photography	Batteries	Batteries | Durable Goods | Electronics/Photography | Batteries
+1266	1264.0	adproduct	Blank Audio/Video Media	Durable Goods	Electronics/Photography	Blank Audio/Video Media	Blank Audio/Video Media | Durable Goods | Electronics/Photography | Blank Audio/Video Media
+1267	1264.0	adproduct	Photography Supplies	Durable Goods	Electronics/Photography	Photography Supplies	Photography Supplies | Durable Goods | Electronics/Photography | Photography Supplies
+1268	1263.0	adproduct	Furniture	Durable Goods	Furniture		Furniture | Durable Goods | Furniture
+1269	1268.0	adproduct	Indoor Furniture	Durable Goods	Furniture	Indoor Furniture	Indoor Furniture | Durable Goods | Furniture | Indoor Furniture
+1270	1268.0	adproduct	Outdoor Furniture	Durable Goods	Furniture	Outdoor Furniture	Outdoor Furniture | Durable Goods | Furniture | Outdoor Furniture
+1271	1263.0	adproduct	Grooming Supplies	Durable Goods	Grooming Supplies		Grooming Supplies | Durable Goods | Grooming Supplies
+1272	1271.0	adproduct	Electric Shaver Groomer	Durable Goods	Grooming Supplies	Electric Shaver Groomer	Electric Shaver Groomer | Durable Goods | Grooming Supplies | Electric Shaver Groomer
+1273	1271.0	adproduct	Hair Appliances	Durable Goods	Grooming Supplies	Hair Appliances	Hair Appliances | Durable Goods | Grooming Supplies | Hair Appliances
+1274	1263.0	adproduct	Tools and Hardware	Durable Goods	Tools and Hardware		Tools and Hardware | Durable Goods | Tools and Hardware
+1275	1274.0	adproduct	Consumer Hardware Supplies	Durable Goods	Tools and Hardware	Consumer Hardware Supplies	Consumer Hardware Supplies | Durable Goods | Tools and Hardware | Consumer Hardware Supplies
+1276	1274.0	adproduct	Industrial Hardware Supplies	Durable Goods	Tools and Hardware	Industrial Hardware Supplies	Industrial Hardware Supplies | Durable Goods | Tools and Hardware | Industrial Hardware Supplies
+1277	1263.0	adproduct	Home and Garden Products	Durable Goods	Home and Garden Products		Home and Garden Products | Durable Goods | Home and Garden Products
+1278	1277.0	adproduct	Bathroom Accessories	Durable Goods	Home and Garden Products	Bathroom Accessories	Bathroom Accessories | Durable Goods | Home and Garden Products | Bathroom Accessories
+1279	1277.0	adproduct	Bedroom Furniture and Accessories	Durable Goods	Home and Garden Products	Bedroom Furniture and Accessories	Bedroom Furniture and Accessories | Durable Goods | Home and Garden Products | Bedroom Furniture and Accessories
+1280	1277.0	adproduct	Carpets and Rugs	Durable Goods	Home and Garden Products	Carpets and Rugs	Carpets and Rugs | Durable Goods | Home and Garden Products | Carpets and Rugs
+1281	1277.0	adproduct	Fireplaces	Durable Goods	Home and Garden Products	Fireplaces	Fireplaces | Durable Goods | Home and Garden Products | Fireplaces
+1282	1277.0	adproduct	Home Decor	Durable Goods	Home and Garden Products	Home Decor	Home Decor | Durable Goods | Home and Garden Products | Home Decor
+1283	1277.0	adproduct	Housewares	Durable Goods	Home and Garden Products	Housewares	Housewares | Durable Goods | Home and Garden Products | Housewares
+1284	1277.0	adproduct	Kitchen and Dining Products	Durable Goods	Home and Garden Products	Kitchen and Dining Products	Kitchen and Dining Products | Durable Goods | Home and Garden Products | Kitchen and Dining Products
+1285	1277.0	adproduct	Lawn and Garden Products	Durable Goods	Home and Garden Products	Lawn and Garden Products	Lawn and Garden Products | Durable Goods | Home and Garden Products | Lawn and Garden Products
+1286	1277.0	adproduct	Lighting	Durable Goods	Home and Garden Products	Lighting	Lighting | Durable Goods | Home and Garden Products | Lighting
+1287	1277.0	adproduct	Linens and Bedding	Durable Goods	Home and Garden Products	Linens and Bedding	Linens and Bedding | Durable Goods | Home and Garden Products | Linens and Bedding
+1288	1277.0	adproduct	Plants	Durable Goods	Home and Garden Products	Plants	Plants | Durable Goods | Home and Garden Products | Plants
+1289	1263.0	adproduct	Household Appliances	Durable Goods	Household Appliances		Household Appliances | Durable Goods | Household Appliances
+1290	1263.0	adproduct	Luggage and Bags	Durable Goods	Luggage and Bags		Luggage and Bags | Durable Goods | Luggage and Bags
+1291		adproduct	Dieting and Weightloss	Dieting and Weightloss			Dieting and Weightloss | Dieting and Weightloss |
+1292	1291.0	adproduct	Food Logging	Dieting and Weightloss	Food Logging		Food Logging | Dieting and Weightloss | Food Logging
+1293	1291.0	adproduct	Weightloss Services	Dieting and Weightloss	Weightloss Services		Weightloss Services | Dieting and Weightloss | Weightloss Services
+1294	1291.0	adproduct	Workout and Step Tracking Applications	Dieting and Weightloss	Workout and Step Tracking Applications		Workout and Step Tracking Applications | Dieting and Weightloss | Workout and Step Tracking Applications
+1295		adproduct	Education and Careers	Education and Careers			Education and Careers | Education and Careers |
+1296	1295.0	adproduct	Adult Education	Education and Careers	Adult Education		Adult Education | Education and Careers | Adult Education
+1297	1295.0	adproduct	Certificaiton Programs	Education and Careers	Certificaiton Programs		Certificaiton Programs | Education and Careers | Certificaiton Programs
+1298	1295.0	adproduct	Colleges and Universities	Education and Careers	Colleges and Universities		Colleges and Universities | Education and Careers | Colleges and Universities
+1299	1298.0	adproduct	Post-Graduate Education	Education and Careers	Colleges and Universities	Post-Graduate Education	Post-Graduate Education | Education and Careers | Colleges and Universities | Post-Graduate Education
+1300	1295.0	adproduct	Education Applications	Education and Careers	Education Applications		Education Applications | Education and Careers | Education Applications
+1301	1295.0	adproduct	Employment Agencies	Education and Careers	Employment Agencies		Employment Agencies | Education and Careers | Employment Agencies
+1302	1295.0	adproduct	Higher Education	Education and Careers	Higher Education		Higher Education | Education and Careers | Higher Education
+1303	1295.0	adproduct	Language Learning	Education and Careers	Language Learning		Language Learning | Education and Careers | Language Learning
+1304	1295.0	adproduct	Online Education	Education and Careers	Online Education		Online Education | Education and Careers | Online Education
+1305	1295.0	adproduct	Primary Education	Education and Careers	Primary Education		Primary Education | Education and Careers | Primary Education
+1306	1295.0	adproduct	Remote work and school	Education and Careers	Remote work and school		Remote work and school | Education and Careers | Remote work and school
+1307	1306.0	adproduct	Distance learning	Education and Careers	Remote work and school	Distance learning	Distance learning | Education and Careers | Remote work and school | Distance learning
+1308	1306.0	adproduct	Homeschooling	Education and Careers	Remote work and school	Homeschooling	Homeschooling | Education and Careers | Remote work and school | Homeschooling
+1309	1306.0	adproduct	Online Surveys	Education and Careers	Remote work and school	Online Surveys	Online Surveys | Education and Careers | Remote work and school | Online Surveys
+1310	1306.0	adproduct	Multi-Level Marketing	Education and Careers	Remote work and school	Multi-Level Marketing	Multi-Level Marketing | Education and Careers | Remote work and school | Multi-Level Marketing
+1311	1306.0	adproduct	Telecommuting	Education and Careers	Remote work and school	Telecommuting	Telecommuting | Education and Careers | Remote work and school | Telecommuting
+1312	1295.0	adproduct	Study Skills	Education and Careers	Study Skills		Study Skills | Education and Careers | Study Skills
+1313	1295.0	adproduct	Teaching Resources	Education and Careers	Teaching Resources		Teaching Resources | Education and Careers | Teaching Resources
+1314	1295.0	adproduct	Trade Schools	Education and Careers	Trade Schools		Trade Schools | Education and Careers | Trade Schools
+1315		adproduct	Events and Performances	Events and Performances			Events and Performances | Events and Performances |
+1316	1315.0	adproduct	Auctions	Events and Performances	Auctions		Auctions | Events and Performances | Auctions
+1317	1315.0	adproduct	Cinemas and Movie Events	Events and Performances	Cinemas and Movie Events		Cinemas and Movie Events | Events and Performances | Cinemas and Movie Events
+1318	1315.0	adproduct	Comedy Events	Events and Performances	Comedy Events		Comedy Events | Events and Performances | Comedy Events
+1319	1315.0	adproduct	Concerts	Events and Performances	Concerts		Concerts | Events and Performances | Concerts
+1320	1315.0	adproduct	Conferences, Lectures and Workshops	Events and Performances	Conferences, Lectures and Workshops		Conferences, Lectures and Workshops | Events and Performances | Conferences, Lectures and Workshops
+1321	1315.0	adproduct	Exhibitions	Events and Performances	Exhibitions		Exhibitions | Events and Performances | Exhibitions
+1322	1315.0	adproduct	Fan Conventions	Events and Performances	Fan Conventions		Fan Conventions | Events and Performances | Fan Conventions
+1323	1315.0	adproduct	Fashion Events	Events and Performances	Fashion Events		Fashion Events | Events and Performances | Fashion Events
+1324	1315.0	adproduct	Nightlife Experiences	Events and Performances	Nightlife Experiences		Nightlife Experiences | Events and Performances | Nightlife Experiences
+1325	1315.0	adproduct	Sporting Events	Events and Performances	Sporting Events		Sporting Events | Events and Performances | Sporting Events
+1326	1315.0	adproduct	Seasonal and Holiday Events	Events and Performances	Seasonal and Holiday Events		Seasonal and Holiday Events | Events and Performances | Seasonal and Holiday Events
+1327	1315.0	adproduct	Theatre and Musicals	Events and Performances	Theatre and Musicals		Theatre and Musicals | Events and Performances | Theatre and Musicals
+1328		adproduct	Family and Parenting	Family and Parenting			Family and Parenting | Family and Parenting |
+1329	1328.0	adproduct	Childcare	Family and Parenting	Childcare		Childcare | Family and Parenting | Childcare
+1330	1329.0	adproduct	Day Care Centers	Family and Parenting	Childcare	Day Care Centers	Day Care Centers | Family and Parenting | Childcare | Day Care Centers
+1331	1329.0	adproduct	Nanny Services	Family and Parenting	Childcare	Nanny Services	Nanny Services | Family and Parenting | Childcare | Nanny Services
+1332	1328.0	adproduct	Genealogy and Family Trees	Family and Parenting	Genealogy and Family Trees		Genealogy and Family Trees | Family and Parenting | Genealogy and Family Trees
+1333	1328.0	adproduct	Kids Activities	Family and Parenting	Kids Activities		Kids Activities | Family and Parenting | Kids Activities
+1334	1328.0	adproduct	Senior Living	Family and Parenting	Senior Living		Senior Living | Family and Parenting | Senior Living
+1335		adproduct	Finance and Insurance	Finance and Insurance			Finance and Insurance | Finance and Insurance |
+1336	1335.0	adproduct	Accountants and Bookkeepers	Finance and Insurance	Accountants and Bookkeepers		Accountants and Bookkeepers | Finance and Insurance | Accountants and Bookkeepers
+1337	1335.0	adproduct	Banking	Finance and Insurance	Banking		Banking | Finance and Insurance | Banking
+1338	1335.0	adproduct	Credit and Debt Repair/Credit Reporting	Finance and Insurance	Credit and Debt Repair/Credit Reporting		Credit and Debt Repair/Credit Reporting | Finance and Insurance | Credit and Debt Repair/Credit Reporting
+1339	1335.0	adproduct	Credit Cards	Finance and Insurance	Credit Cards		Credit Cards | Finance and Insurance | Credit Cards
+1340	1335.0	adproduct	Insurance	Finance and Insurance	Insurance		Insurance | Finance and Insurance | Insurance
+1341	1340.0	adproduct	Auto Insurance	Finance and Insurance	Insurance	Auto Insurance	Auto Insurance | Finance and Insurance | Insurance | Auto Insurance
+1342	1340.0	adproduct	Home Insurance	Finance and Insurance	Insurance	Home Insurance	Home Insurance | Finance and Insurance | Insurance | Home Insurance
+1343	1340.0	adproduct	Life Insurance	Finance and Insurance	Insurance	Life Insurance	Life Insurance | Finance and Insurance | Insurance | Life Insurance
+1344	1340.0	adproduct	Medical Insurance	Finance and Insurance	Insurance	Medical Insurance	Medical Insurance | Finance and Insurance | Insurance | Medical Insurance
+1345	1340.0	adproduct	Pet Insurance	Finance and Insurance	Insurance	Pet Insurance	Pet Insurance | Finance and Insurance | Insurance | Pet Insurance
+1346	1340.0	adproduct	Travel Insurance	Finance and Insurance	Insurance	Travel Insurance	Travel Insurance | Finance and Insurance | Insurance | Travel Insurance
+1347	1335.0	adproduct	Insurance Coverage Apps	Finance and Insurance	Insurance Coverage Apps		Insurance Coverage Apps | Finance and Insurance | Insurance Coverage Apps
+1348	1335.0	adproduct	Mortgage Lenders and Brokers	Finance and Insurance	Mortgage Lenders and Brokers		Mortgage Lenders and Brokers | Finance and Insurance | Mortgage Lenders and Brokers
+1349	1335.0	adproduct	Payday and Emergency Loans	Finance and Insurance	Payday and Emergency Loans		Payday and Emergency Loans | Finance and Insurance | Payday and Emergency Loans
+1350	1335.0	adproduct	Retirement Planning	Finance and Insurance	Retirement Planning		Retirement Planning | Finance and Insurance | Retirement Planning
+1351	1335.0	adproduct	Stocks and Investments	Finance and Insurance	Stocks and Investments		Stocks and Investments | Finance and Insurance | Stocks and Investments
+1352	1335.0	adproduct	Financial Investment and Management Applications	Finance and Insurance	Financial Investment and Management Applications		Financial Investment and Management Applications | Finance and Insurance | Financial Investment and Management Applications
+1353	1335.0	adproduct	Student Financial Aid	Finance and Insurance	Student Financial Aid		Student Financial Aid | Finance and Insurance | Student Financial Aid
+1354	1335.0	adproduct	Tax Preparation Services	Finance and Insurance	Tax Preparation Services		Tax Preparation Services | Finance and Insurance | Tax Preparation Services
+1355		adproduct	Food and Beverage Services	Food and Beverage Services			Food and Beverage Services | Food and Beverage Services |
+1356	1355.0	adproduct	Bakeries	Food and Beverage Services	Bakeries		Bakeries | Food and Beverage Services | Bakeries
+1357	1355.0	adproduct	Catering	Food and Beverage Services	Catering		Catering | Food and Beverage Services | Catering
+1358	1355.0	adproduct	Fast Food	Food and Beverage Services	Fast Food		Fast Food | Food and Beverage Services | Fast Food
+1359	1355.0	adproduct	Food Delivery Services	Food and Beverage Services	Food Delivery Services		Food Delivery Services | Food and Beverage Services | Food Delivery Services
+1360	1355.0	adproduct	Restaurants	Food and Beverage Services	Restaurants		Restaurants | Food and Beverage Services | Restaurants
+1361		adproduct	Gambling	Gambling			Gambling | Gambling |
+1362	1361.0	adproduct	Casinos	Gambling	Casinos		Casinos | Gambling | Casinos
+1363	1361.0	adproduct	Contests	Gambling	Contests		Contests | Gambling | Contests
+1364	1361.0	adproduct	Give Aways	Gambling	Give Aways		Give Aways | Gambling | Give Aways
+1365	1361.0	adproduct	Lottery	Gambling	Lottery		Lottery | Gambling | Lottery
+1366	1361.0	adproduct	Sports Betting	Gambling	Sports Betting		Sports Betting | Gambling | Sports Betting
+1367	1361.0	adproduct	Virtual Betting	Gambling	Virtal Betting		Virtual Betting | Gambling | Virtal Betting
+1368		adproduct	Green/Eco	Green/Eco			Green/Eco | Green/Eco |
+1369	1368.0	adproduct	Green/Eco Products	Green/Eco	Green/Eco Products		Green/Eco Products | Green/Eco | Green/Eco Products
+1370	1368.0	adproduct	Green/Eco Services	Green/Eco	Green/Eco Services		Green/Eco Services | Green/Eco | Green/Eco Services
+1371		adproduct	Gifts and Holiday Items	Gifts and Holiday Items			Gifts and Holiday Items | Gifts and Holiday Items |
+1372	1371.0	adproduct	Flowers	Gifts and Holiday Items	Flowers		Flowers | Gifts and Holiday Items | Flowers
+1373	1371.0	adproduct	Gift Baskets	Gifts and Holiday Items	Gift Baskets		Gift Baskets | Gifts and Holiday Items | Gift Baskets
+1374	1371.0	adproduct	Gift Cards and Coupons	Gifts and Holiday Items	Gift Cards and Coupons		Gift Cards and Coupons | Gifts and Holiday Items | Gift Cards and Coupons
+1375	1371.0	adproduct	Gift Certificates	Gifts and Holiday Items	Gift Certificates		Gift Certificates | Gifts and Holiday Items | Gift Certificates
+1376	1371.0	adproduct	Greeting Cards	Gifts and Holiday Items	Greeting Cards		Greeting Cards | Gifts and Holiday Items | Greeting Cards
+1377	1371.0	adproduct	Party Goods	Gifts and Holiday Items	Party Goods		Party Goods | Gifts and Holiday Items | Party Goods
+1378		adproduct	Health and Medical Services	Health and Medical Services			Health and Medical Services | Health and Medical Services |
+1379	1378.0	adproduct	Alternative and Natural Medicine	Health and Medical Services	Alternative and Natural Medicine		Alternative and Natural Medicine | Health and Medical Services | Alternative and Natural Medicine
+1380	1378.0	adproduct	Assisted Living	Health and Medical Services	Assisted Living		Assisted Living | Health and Medical Services | Assisted Living
+1381	1378.0	adproduct	Chiropractors	Health and Medical Services	Chiropractors		Chiropractors | Health and Medical Services | Chiropractors
+1382	1378.0	adproduct	Clinical Research	Health and Medical Services	Clinical Research		Clinical Research | Health and Medical Services | Clinical Research
+1383	1378.0	adproduct	Cosmetic Medical Services	Health and Medical Services	Cosmetic Medical Services		Cosmetic Medical Services | Health and Medical Services | Cosmetic Medical Services
+1384	1378.0	adproduct	Dental Care	Health and Medical Services	Dental Care		Dental Care | Health and Medical Services | Dental Care
+1385	1378.0	adproduct	Dermatology	Health and Medical Services	Dermatology		Dermatology | Health and Medical Services | Dermatology
+1386	1378.0	adproduct	Drugstores and Pharmacies	Health and Medical Services	Drugstores and Pharmacies		Drugstores and Pharmacies | Health and Medical Services | Drugstores and Pharmacies
+1387	1378.0	adproduct	Fertility and Family Planning	Health and Medical Services	Fertility and Family Planning		Fertility and Family Planning | Health and Medical Services | Fertility and Family Planning
+1388	1378.0	adproduct	General Practitioners	Health and Medical Services	General Practitioners		General Practitioners | Health and Medical Services | General Practitioners
+1389	1378.0	adproduct	Home Healthcare	Health and Medical Services	Home Healthcare		Home Healthcare | Health and Medical Services | Home Healthcare
+1390	1378.0	adproduct	Hospitals	Health and Medical Services	Hospitals		Hospitals | Health and Medical Services | Hospitals
+1391	1378.0	adproduct	Mental Health	Health and Medical Services	Mental Health		Mental Health | Health and Medical Services | Mental Health
+1392	1378.0	adproduct	Physical Therapists	Health and Medical Services	Physical Therapists		Physical Therapists | Health and Medical Services | Physical Therapists
+1393	1378.0	adproduct	Service Provider Search and Scheduling	Health and Medical Services	Service Provider Search and Scheduling		Service Provider Search and Scheduling | Health and Medical Services | Service Provider Search and Scheduling
+1394	1378.0	adproduct	Symptom Monitoring Apps	Health and Medical Services	Symptom Monitoring Apps		Symptom Monitoring Apps | Health and Medical Services | Symptom Monitoring Apps
+1395	1378.0	adproduct	Vision Care	Health and Medical Services	Vision Care		Vision Care | Health and Medical Services | Vision Care
+1396		adproduct	Home and Garden Services	Home and Garden Services			Home and Garden Services | Home and Garden Services |
+1397	1396.0	adproduct	Appliance Repair	Home and Garden Services	Appliance Repair		Appliance Repair | Home and Garden Services | Appliance Repair
+1398	1396.0	adproduct	Business and Home Security Services	Home and Garden Services	Business and Home Security Services		Business and Home Security Services | Home and Garden Services | Business and Home Security Services
+1399	1396.0	adproduct	Carpeting and Flooring Services	Home and Garden Services	Carpeting and Flooring Services		Carpeting and Flooring Services | Home and Garden Services | Carpeting and Flooring Services
+1400	1396.0	adproduct	Do It Yourself Applications	Home and Garden Services	Do It Yourself Applications		Do It Yourself Applications | Home and Garden Services | Do It Yourself Applications
+1401	1396.0	adproduct	Emergency Preparedness	Home and Garden Services	Emergency Preparedness		Emergency Preparedness | Home and Garden Services | Emergency Preparedness
+1402	1396.0	adproduct	Flood, Fire and Gas Safety	Home and Garden Services	Flood, Fire and Gas Safety		Flood, Fire and Gas Safety | Home and Garden Services | Flood, Fire and Gas Safety
+1403	1396.0	adproduct	Gas and Electric Services	Home and Garden Services	Gas and Electric Services		Gas and Electric Services | Home and Garden Services | Gas and Electric Services
+1404	1396.0	adproduct	Home Improvement and Repair	Home and Garden Services	Home Improvement and Repair		Home Improvement and Repair | Home and Garden Services | Home Improvement and Repair
+1405	1396.0	adproduct	Home Security and Monitoring Applications	Home and Garden Services	Home Security and Monitoring Applications		Home Security and Monitoring Applications | Home and Garden Services | Home Security and Monitoring Applications
+1406	1396.0	adproduct	Home Service Provider Review	Home and Garden Services	Home Service Provider Review		Home Service Provider Review | Home and Garden Services | Home Service Provider Review
+1407	1396.0	adproduct	Housekeeping Services	Home and Garden Services	Housekeeping Services		Housekeeping Services | Home and Garden Services | Housekeeping Services
+1408	1396.0	adproduct	Landscaping Services	Home and Garden Services	Landscaping Services		Landscaping Services | Home and Garden Services | Landscaping Services
+1409	1396.0	adproduct	Lawn and Garden Services	Home and Garden Services	Lawn and Garden Services		Lawn and Garden Services | Home and Garden Services | Lawn and Garden Services
+1410	1396.0	adproduct	Pest Exterminators	Home and Garden Services	Pest Exterminators		Pest Exterminators | Home and Garden Services | Pest Exterminators
+1411	1396.0	adproduct	Plumbers	Home and Garden Services	Plumbers		Plumbers | Home and Garden Services | Plumbers
+1412	1396.0	adproduct	Pool and Spa Installation and Maintenance	Home and Garden Services	Pool and Spa Installation and Maintenance		Pool and Spa Installation and Maintenance | Home and Garden Services | Pool and Spa Installation and Maintenance
+1413	1396.0	adproduct	Remodeling and Construction	Home and Garden Services	Remodeling and Construction		Remodeling and Construction | Home and Garden Services | Remodeling and Construction
+1414	1396.0	adproduct	Water Services	Home and Garden Services	Water Services		Water Services | Home and Garden Services | Water Services
+1415	1396.0	adproduct	Window Installation and Treatments	Home and Garden Services	Window Installation and Treatments		Window Installation and Treatments | Home and Garden Services | Window Installation and Treatments
+1416		adproduct	Legal Services	Legal Services			Legal Services | Legal Services |
+1417	1416.0	adproduct	Lawyers	Legal Services	Lawyers		Lawyers | Legal Services | Lawyers
+1418	1416.0	adproduct	Bail Bonds	Legal Services	Bail Bonds		Bail Bonds | Legal Services | Bail Bonds
+1419		adproduct	Media	Media			Media | Media |
+1420	1419.0	adproduct	Blogs/Forums/Social Networks	Media	Blogs/Forums/Social Networks		Blogs/Forums/Social Networks | Media | Blogs/Forums/Social Networks
+1421	1419.0	adproduct	Book Reading and Review Applications	Media	Book Reading and Review Applications		Book Reading and Review Applications | Media | Book Reading and Review Applications
+1422	1419.0	adproduct	Books and Audio Books	Media	Books and Audio Books		Books and Audio Books | Media | Books and Audio Books
+1423	1419.0	adproduct	Casual Games	Media	Casual Games		Casual Games | Media | Casual Games
+1424	1423.0	adproduct	Casual Games Apps	Media	Casual Games	Casual Games Apps	Casual Games Apps | Media | Casual Games | Casual Games Apps
+1425	1419.0	adproduct	Core Gaming	Media	Core Gaming		Core Gaming | Media | Core Gaming
+1426	1423.0	adproduct	Core Gaming Apps	Media	Core Gaming	Core Gaming Apps	Core Gaming Apps | Media | Core Gaming | Core Gaming Apps
+1427	1419.0	adproduct	CDs and Vinyl Records	Media	CDs and Vinyl Records		CDs and Vinyl Records | Media | CDs and Vinyl Records
+1428	1419.0	adproduct	DVDs	Media	DVDs		DVDs | Media | DVDs
+1429	1419.0	adproduct	Live Television	Media	Live Television		Live Television | Media | Live Television
+1430	1419.0	adproduct	Magazines and Newspapers	Media	Magazines and Newspapers		Magazines and Newspapers | Media | Magazines and Newspapers
+1431	1419.0	adproduct	Music and Video Streaming Services	Media	Music and Video Streaming Services		Music and Video Streaming Services | Media | Music and Video Streaming Services
+1432	1419.0	adproduct	News and Analysis	Media	News and Analysis		News and Analysis | Media | News and Analysis
+1433	1419.0	adproduct	Radio and Podcasts	Media	Radio and Podcasts		Radio and Podcasts | Media | Radio and Podcasts
+1434	1419.0	adproduct	Sports	Media	Sports		Sports | Media | Sports
+1435	1434.0	adproduct	Fantasy Sports	Media	Sports	Fantasy Sports	Fantasy Sports | Media | Sports | Fantasy Sports
+1436	1434.0	adproduct	Sports Highlights	Media	Sports	Sports Highlights	Sports Highlights | Media | Sports | Sports Highlights
+1437	1434.0	adproduct	Team News and Analysis	Media	Sports	Team News and Analysis	Team News and Analysis | Media | Sports | Team News and Analysis
+1438	1419.0	adproduct	Utilities Apps	Media	Utilities Apps		Utilities Apps | Media | Utilities Apps
+1439	1438.0	adproduct	Productivity Apps	Media	Utilities Apps	Productivity Apps	Productivity Apps | Media | Utilities Apps | Productivity Apps
+1440	1438.0	adproduct	Reference Apps	Media	Utilities Apps	Reference Apps	Reference Apps | Media | Utilities Apps | Reference Apps
+1441	1438.0	adproduct	Search Engine Apps	Media	Utilities Apps	Search Engine Apps	Search Engine Apps | Media | Utilities Apps | Search Engine Apps
+1442	1438.0	adproduct	Weather Apps	Media	Utilities Apps	Weather Apps	Weather Apps | Media | Utilities Apps | Weather Apps
+1443		adproduct	Metals	Metals			Metals | Metals |
+1444	1443.0	adproduct	Coin Trade In	Metals	Coin Trade In		Coin Trade In | Metals | Coin Trade In
+1445	1443.0	adproduct	Gold Trade In	Metals	Gold Trade In		Gold Trade In | Metals | Gold Trade In
+1446	1443.0	adproduct	Platinum Trade In	Metals	Platinum Trade In		Platinum Trade In | Metals | Platinum Trade In
+1447	1443.0	adproduct	Silver Trade In	Metals	Silver Trade In		Silver Trade In | Metals | Silver Trade In
+1448		adproduct	Non-Fiat Currency	Non-Fiat Currency			Non-Fiat Currency | Non-Fiat Currency |
+1449	1448.0	adproduct	Cryptocurrency Exchanges	Non-Fiat Currency	Cryptocurrency Exchanges		Cryptocurrency Exchanges | Non-Fiat Currency | Cryptocurrency Exchanges
+1450	1448.0	adproduct	Cryptocurrency Stock	Non-Fiat Currency	Cryptocurrency Stock		Cryptocurrency Stock | Non-Fiat Currency | Cryptocurrency Stock
+1451	1448.0	adproduct	NFTs	Non-Fiat Currency	NFTs		NFTs | Non-Fiat Currency | NFTs
+1452		adproduct	Non-Profits	Non-Profits			Non-Profits | Non-Profits |
+1453	1452.0	adproduct	Charities and Donations	Non-Profits	Charities and Donations		Charities and Donations | Non-Profits | Charities and Donations
+1454	1452.0	adproduct	Civic Organizations	Non-Profits	Civic Organizations		Civic Organizations | Non-Profits | Civic Organizations
+1455	1452.0	adproduct	Federations and Professional Associations	Non-Profits	Federations and Professional Associations		Federations and Professional Associations | Non-Profits | Federations and Professional Associations
+1456	1452.0	adproduct	Military Organizations	Non-Profits	Military Organizations		Military Organizations | Non-Profits | Military Organizations
+1457	1452.0	adproduct	Non-Governmental Organizations	Non-Profits	Non-Governmental Organizations		Non-Governmental Organizations | Non-Profits | Non-Governmental Organizations
+1458	1452.0	adproduct	Public Service Announcements	Non-Profits	Public Service Announcements		Public Service Announcements | Non-Profits | Public Service Announcements
+1459	1452.0	adproduct	Scholarships	Non-Profits	Scholarships		Scholarships | Non-Profits | Scholarships
+1460		adproduct	Pet Ownership	Pet Ownership			Pet Ownership | Pet Ownership |
+1461	1460.0	adproduct	Pet Adoption	Pet Ownership	Pet Adoption		Pet Adoption | Pet Ownership | Pet Adoption
+1462	1460.0	adproduct	Pet Breeders	Pet Ownership	Pet Breeders		Pet Breeders | Pet Ownership | Pet Breeders
+1463	1460.0	adproduct	Pet Care and Supply Applications	Pet Ownership	Pet Care and Supply Applications		Pet Care and Supply Applications | Pet Ownership | Pet Care and Supply Applications
+1464	1460.0	adproduct	Pet Grooming	Pet Ownership	Pet Grooming		Pet Grooming | Pet Ownership | Pet Grooming
+1465	1460.0	adproduct	Pet Sitting	Pet Ownership	Pet Sitting		Pet Sitting | Pet Ownership | Pet Sitting
+1466	1460.0	adproduct	Veterinary Services	Pet Ownership	Veterinary Services		Veterinary Services | Pet Ownership | Veterinary Services
+1467		adproduct	Personal/Consumer Telcom	Personal/Consumer Telecom			Personal/Consumer Telcom | Personal/Consumer Telecom |
+1468	1467.0	adproduct	Home Internet Services	Personal/Consumer Telecom	Home Internet Services		Home Internet Services | Personal/Consumer Telecom | Home Internet Services
+1469	1467.0	adproduct	Home Phone Services	Personal/Consumer Telecom	Home Phone Services		Home Phone Services | Personal/Consumer Telecom | Home Phone Services
+1470	1467.0	adproduct	Home Television Services	Personal/Consumer Telecom	Home Television Services		Home Television Services | Personal/Consumer Telecom | Home Television Services
+1471	1467.0	adproduct	Mobile Phone Plans	Personal/Consumer Telecom	Mobile Phone Plans		Mobile Phone Plans | Personal/Consumer Telecom | Mobile Phone Plans
+1472	1467.0	adproduct	Prepaid International Phone Services	Personal/Consumer Telecom	Prepaid International Phone Services		Prepaid International Phone Services | Personal/Consumer Telecom | Prepaid International Phone Services
+1473		adproduct	Pharmaceuticals	Pharmaceuticals			Pharmaceuticals | Pharmaceuticals |
+1474		adproduct	Politics	Politics			Politics | Politics |
+1475	1474.0	adproduct	Ballot measures	Politics	Ballot measures		Ballot measures | Politics | Ballot measures
+1476	1474.0	adproduct	Elections	Politics	Elections		Elections | Politics | Elections
+1477	1474.0	adproduct	Political Action Committees	Politics	Political Action Committees		Political Action Committees | Politics | Political Action Committees
+1478	1474.0	adproduct	Political Analysis and Opinion	Politics	Political Analysis and Opinion		Political Analysis and Opinion | Politics | Political Analysis and Opinion
+1479	1474.0	adproduct	Political candidates	Politics	Political candidates		Political candidates | Politics | Political candidates
+1480	1474.0	adproduct	Political Donations	Politics	Political Donations		Political Donations | Politics | Political Donations
+1481	1474.0	adproduct	Referendums or promoting causes; eg: Healthcare reform, energy trades (Oil/Solar), etc...	Politics	Referendums or promoting causes; eg: Healthcare reform, energy trades (Oil/Solar), etc...		Referendums or promoting causes; eg: Healthcare reform, energy trades (Oil/Solar), etc... | Politics | Referendums or promoting causes; eg: Healthcare reform, energy trades (Oil/Solar), etc...
+1482		adproduct	Real Estate	Real Estate			Real Estate | Real Estate |
+1483	1482.0	adproduct	Commercial Real Estate	Real Estate	Commercial Real Estate		Commercial Real Estate | Real Estate | Commercial Real Estate
+1484	1482.0	adproduct	Real Estate Rentals	Real Estate	Real Estate Rentals		Real Estate Rentals | Real Estate | Real Estate Rentals
+1485	1482.0	adproduct	Real Estate Sales	Real Estate	Real Estate Sales		Real Estate Sales | Real Estate | Real Estate Sales
+1486	1482.0	adproduct	Real Estate Services For Owners	Real Estate	Real Estate Services For Owners		Real Estate Services For Owners | Real Estate | Real Estate Services For Owners
+1487		adproduct	Religion and Spirituality	Religion and Spirituality			Religion and Spirituality | Religion and Spirituality |
+1488	1487.0	adproduct	Astrology	Religion and Spirituality	Astrology		Astrology | Religion and Spirituality | Astrology
+1489	1487.0	adproduct	Prayer and Mindfullness Applications	Religion and Spirituality	Prayer and Mindfullness Applications		Prayer and Mindfullness Applications | Religion and Spirituality | Prayer and Mindfullness Applications
+1490	1487.0	adproduct	Prayer and worship services	Religion and Spirituality	Prayer and Worship Services		Prayer and worship services | Religion and Spirituality | Prayer and Worship Services
+1491	1487.0	adproduct	Religious causes	Religion and Spirituality	Religious Causes		Religious causes | Religion and Spirituality | Religious Causes
+1492	1487.0	adproduct	Religious charities	Religion and Spirituality	Religious Charities		Religious charities | Religion and Spirituality | Religious Charities
+1493	1487.0	adproduct	Religious organizaitions	Religion and Spirituality	Religious Organizaitions		Religious organizaitions | Religion and Spirituality | Religious Organizaitions
+1494		adproduct	Retail	Retail			Retail | Retail |
+1495	1494.0	adproduct	Arts and Crafts Supplies	Retail	Arts and Crafts Supplies		Arts and Crafts Supplies | Retail | Arts and Crafts Supplies
+1496	1494.0	adproduct	Cell Phone Stores	Retail	Cell Phone Stores		Cell Phone Stores | Retail | Cell Phone Stores
+1497	1494.0	adproduct	Clothing Stores	Retail	Clothing Stores		Clothing Stores | Retail | Clothing Stores
+1498	1494.0	adproduct	Department Stores	Retail	Department Stores		Department Stores | Retail | Department Stores
+1499	1494.0	adproduct	eCommerce	Retail	eCommerce		eCommerce | Retail | eCommerce
+1500	1494.0	adproduct	Factory Outlet Stores	Retail	Factory Outlet Stores		Factory Outlet Stores | Retail | Factory Outlet Stores
+1501	1494.0	adproduct	Grocery Stores and Supermarkets	Retail	Grocery Stores and Supermarkets		Grocery Stores and Supermarkets | Retail | Grocery Stores and Supermarkets
+1502	1494.0	adproduct	Hardware Stores	Retail	Hardware Stores		Hardware Stores | Retail | Hardware Stores
+1503	1494.0	adproduct	Musical Instruments and Record Stores	Retail	Musical Instruments and Record Stores		Musical Instruments and Record Stores | Retail | Musical Instruments and Record Stores
+1504	1494.0	adproduct	Pawn Shops	Retail	Pawn Shops		Pawn Shops | Retail | Pawn Shops
+1505	1494.0	adproduct	Pet and Pet Supply Stores	Retail	Pet and Pet Supply Stores		Pet and Pet Supply Stores | Retail | Pet and Pet Supply Stores
+1506	1494.0	adproduct	Shopping Malls	Retail	Shopping Malls		Shopping Malls | Retail | Shopping Malls
+1507	1494.0	adproduct	Specialty Stores	Retail	Specialty Stores		Specialty Stores | Retail | Specialty Stores
+1508	1494.0	adproduct	Sporting Goods Stores	Retail	Sporting Goods Stores		Sporting Goods Stores | Retail | Sporting Goods Stores
+1509	1494.0	adproduct	Ticket Services	Retail	Ticket Services		Ticket Services | Retail | Ticket Services
+1510		adproduct	Fitness Activities	Fitness Activities			Fitness Activities | Fitness Activities |
+1511	1510.0	adproduct	Dance Studios	Fitness Activities	Dance Studios		Dance Studios | Fitness Activities | Dance Studios
+1512	1510.0	adproduct	Gyms and Health Clubs	Fitness Activities	Gyms and Health Clubs		Gyms and Health Clubs | Fitness Activities | Gyms and Health Clubs
+1513	1510.0	adproduct	Participant Sports Leagues	Fitness Activities	Participant Sports Leagues		Participant Sports Leagues | Fitness Activities | Participant Sports Leagues
+1514	1510.0	adproduct	Personal Trainers	Fitness Activities	Personal Trainers		Personal Trainers | Fitness Activities | Personal Trainers
+1515	1510.0	adproduct	Self Defense and Martial Arts Classes	Fitness Activities	Self Defense and Martial Arts Classes		Self Defense and Martial Arts Classes | Fitness Activities | Self Defense and Martial Arts Classes
+1516	1510.0	adproduct	Swimming Facilities	Fitness Activities	Swimming Facilities		Swimming Facilities | Fitness Activities | Swimming Facilities
+1517	1510.0	adproduct	Workout and Step Tracking Applications	Fitness Activities	Workout and Step Tracking Applications		Workout and Step Tracking Applications | Fitness Activities | Workout and Step Tracking Applications
+1518	1510.0	adproduct	Yoga Studios	Fitness Activities	Yoga Studios		Yoga Studios | Fitness Activities | Yoga Studios
+1519		adproduct	Sexual Health	Sexual Health			Sexual Health | Sexual Health |
+1520	1519.0	adproduct	Contraceptives	Sexual Health	Contraceptives		Contraceptives | Sexual Health | Contraceptives
+1521	1519.0	adproduct	Doctor Perscribed Medicines	Sexual Health	Doctor Perscribed Medicines		Doctor Perscribed Medicines | Sexual Health | Doctor Perscribed Medicines
+1522	1519.0	adproduct	Fertility Tracking Applications	Sexual Health	Fertility Tracking Applications		Fertility Tracking Applications | Sexual Health | Fertility Tracking Applications
+1523	1519.0	adproduct	Non-perscribed Performance Enhancers	Sexual Health	Non-Perscribed Performance Enhancers		Non-perscribed Performance Enhancers | Sexual Health | Non-Perscribed Performance Enhancers
+1524		adproduct	Sporting Goods	Sporting Goods			Sporting Goods | Sporting Goods |
+1525	1524.0	adproduct	Athletics Equipment	Sporting Goods	Athletics Equipment		Athletics Equipment | Sporting Goods | Athletics Equipment
+1526	1524.0	adproduct	Exercise and Fitness Equipment	Sporting Goods	Exercise and Fitness Equipment		Exercise and Fitness Equipment | Sporting Goods | Exercise and Fitness Equipment
+1527	1524.0	adproduct	Indoor Games Equipment	Sporting Goods	Indoor Games Equipment		Indoor Games Equipment | Sporting Goods | Indoor Games Equipment
+1528	1524.0	adproduct	Outdoor Recreation Equipment	Sporting Goods	Outdoor Recreation Equipment		Outdoor Recreation Equipment | Sporting Goods | Outdoor Recreation Equipment
+1529		adproduct	Travel and Tourism	Travel and Tourism			Travel and Tourism | Travel and Tourism |
+1530	1529.0	adproduct	Accommodations	Travel and Tourism	Accommodations		Accommodations | Travel and Tourism | Accommodations
+1531	1530.0	adproduct	Bed and Breakfasts	Travel and Tourism	Accommodations	Bed and Breakfasts	Bed and Breakfasts | Travel and Tourism | Accommodations | Bed and Breakfasts
+1532	1530.0	adproduct	Camping and Camp Grounds	Travel and Tourism	Accommodations	Camping and Camp Grounds	Camping and Camp Grounds | Travel and Tourism | Accommodations | Camping and Camp Grounds
+1533	1530.0	adproduct	Hotels and Resorts	Travel and Tourism	Accommodations	Hotels and Resorts	Hotels and Resorts | Travel and Tourism | Accommodations | Hotels and Resorts
+1534	1530.0	adproduct	Motels	Travel and Tourism	Accommodations	Motels	Motels | Travel and Tourism | Accommodations | Motels
+1535	1530.0	adproduct	Timeshares	Travel and Tourism	Accommodations	Timeshares	Timeshares | Travel and Tourism | Accommodations | Timeshares
+1536	1530.0	adproduct	Vacation Rentals	Travel and Tourism	Accommodations	Vacation Rentals	Vacation Rentals | Travel and Tourism | Accommodations | Vacation Rentals
+1537	1529.0	adproduct	Air Travel	Travel and Tourism	Air Travel		Air Travel | Travel and Tourism | Air Travel
+1538	1529.0	adproduct	Cruises	Travel and Tourism	Cruises		Cruises | Travel and Tourism | Cruises
+1539	1529.0	adproduct	Rail Travel	Travel and Tourism	Rail Travel		Rail Travel | Travel and Tourism | Rail Travel
+1540	1529.0	adproduct	Sightseeing Tours and Activities	Travel and Tourism	Sightseeing Tours and Activities		Sightseeing Tours and Activities | Travel and Tourism | Sightseeing Tours and Activities
+1541	1529.0	adproduct	Travel Agents and Online Travel Services	Travel and Tourism	Travel Agents and Online Travel Services		Travel Agents and Online Travel Services | Travel and Tourism | Travel Agents and Online Travel Services
+1542	1529.0	adproduct	Travel Packages	Travel and Tourism	Travel Packages		Travel Packages | Travel and Tourism | Travel Packages
+1543	1529.0	adproduct	Travel Planning and Itinerary Management Applications	Travel and Tourism	Travel Planning and Itinerary Management Applications		Travel Planning and Itinerary Management Applications | Travel and Tourism | Travel Planning and Itinerary Management Applications
+1544		adproduct	Tobacco	Tobacco			Tobacco | Tobacco |
+1545	1544.0	adproduct	Cigars	Tobacco	Cigars		Cigars | Tobacco | Cigars
+1546	1544.0	adproduct	Cigarettes	Tobacco	Cigarettes		Cigarettes | Tobacco | Cigarettes
+1547	1544.0	adproduct	Smokeless Tobacco	Tobacco	Smokeless Tobacco		Smokeless Tobacco | Tobacco | Smokeless Tobacco
+1548	1544.0	adproduct	Vaping	Tobacco	Vaping		Vaping | Tobacco | Vaping
+1549	1544.0	adproduct	Vaping Cartridges	Tobacco	Vaping Cartridges		Vaping Cartridges | Tobacco | Vaping Cartridges
+1550	1544.0	adproduct	Vaporizors	Tobacco	Vaporizors		Vaporizors | Tobacco | Vaporizors
+1551		adproduct	Vehicles	Vehicles			Vehicles | Vehicles |
+1552	1551.0	adproduct	Automotive Leasing	Vehicles	Automotive Leasing		Automotive Leasing | Vehicles | Automotive Leasing
+1553	1551.0	adproduct	Automotive Ownership	Vehicles	Automotive Ownership		Automotive Ownership | Vehicles | Automotive Ownership
+1554	1553.0	adproduct	New vehicle Ownership	Vehicles	Automotive Ownership	New Vehicle Ownership	New vehicle Ownership | Vehicles | Automotive Ownership | New Vehicle Ownership
+1555	1553.0	adproduct	Pre-owned Automotive Ownership	Vehicles	Automotive Ownership	Pre-owned Automotive Ownership	Pre-owned Automotive Ownership | Vehicles | Automotive Ownership | Pre-owned Automotive Ownership
+1556	1551.0	adproduct	Automotive Products	Vehicles	Automotive Products		Automotive Products | Vehicles | Automotive Products
+1557	1556.0	adproduct	Automotive Care Products	Vehicles	Automotive Products	Automotive Care Products	Automotive Care Products | Vehicles | Automotive Products | Automotive Care Products
+1558	1556.0	adproduct	Automotive Parts and Accessories	Vehicles	Automotive Products	Automotive Parts and Accessories	Automotive Parts and Accessories | Vehicles | Automotive Products | Automotive Parts and Accessories
+1559	1556.0	adproduct	Aftermarket Parts and Accessories	Vehicles	Automotive Products	Aftermarket Parts and Accessories	Aftermarket Parts and Accessories | Vehicles | Automotive Products | Aftermarket Parts and Accessories
+1560	1551.0	adproduct	Automotive Services	Vehicles	Automotive Services		Automotive Services | Vehicles | Automotive Services
+1561	1560.0	adproduct	Auto Towing	Vehicles	Automotive Services	Auto Towing	Auto Towing | Vehicles | Automotive Services | Auto Towing
+1562	1560.0	adproduct	Auto Repair	Vehicles	Automotive Services	Auto Repair	Auto Repair | Vehicles | Automotive Services | Auto Repair
+1563	1560.0	adproduct	Car Wash	Vehicles	Automotive Services	Car Wash	Car Wash | Vehicles | Automotive Services | Car Wash
+1564	1551.0	adproduct	Automotive Sales Applications	Vehicles	Automotive Sales Applications		Automotive Sales Applications | Vehicles | Automotive Sales Applications
+1565	1551.0	adproduct	Ride-sharing Services	Vehicles	Ride-sharing Services		Ride-sharing Services | Vehicles | Ride-sharing Services
+1566	1551.0	adproduct	Taxi Services	Vehicles	Taxi Services		Taxi Services | Vehicles | Taxi Services
+1567	1551.0	adproduct	Vehicle Rental	Vehicles	Vehicle Rental		Vehicle Rental | Vehicles | Vehicle Rental
+1568	1551.0	adproduct	Vehicle Type	Vehicles	Vehicle Type		Vehicle Type | Vehicles | Vehicle Type
+1569	1568.0	adproduct	Boats	Vehicles	Vehicle Type	Boats	Boats | Vehicles | Vehicle Type | Boats
+1570	1568.0	adproduct	Diesel Vehicles	Vehicles	Vehicle Type	Diesel Vehicles	Diesel Vehicles | Vehicles | Vehicle Type | Diesel Vehicles
+1571	1568.0	adproduct	Electric Vehicles	Vehicles	Vehicle Type	Electric Vehicles	Electric Vehicles | Vehicles | Vehicle Type | Electric Vehicles
+1572	1568.0	adproduct	Gas Vehicles	Vehicles	Vehicle Type	Gas Vehicles	Gas Vehicles | Vehicles | Vehicle Type | Gas Vehicles
+1573	1568.0	adproduct	Hybrid Vehicles	Vehicles	Vehicle Type	Hybrid Vehicles	Hybrid Vehicles | Vehicles | Vehicle Type | Hybrid Vehicles
+1574	1568.0	adproduct	Recreational Vehicles	Vehicles	Vehicle Type	Recreational Vehicles	Recreational Vehicles | Vehicles | Vehicle Type | Recreational Vehicles
+1575	1568.0	adproduct	Scooters, Motorbikes, and E-bikes	Vehicles	Vehicle Type	Scooters, Motorbikes, and E-bikes	Scooters, Motorbikes, and E-bikes | Vehicles | Vehicle Type | Scooters, Motorbikes, and E-bikes
+1576		adproduct	Weapons and Ammunition	Weapons and Ammunition			Weapons and Ammunition | Weapons and Ammunition |
+1577	1576.0	adproduct	Ammunition	Weapons and Ammunition	Ammunition		Ammunition | Weapons and Ammunition | Ammunition
+1578	1576.0	adproduct	Guns	Weapons and Ammunition	Guns		Guns | Weapons and Ammunition | Guns
+1579	1576.0	adproduct	Gun Accessories	Weapons and Ammunition	Gun Accessories		Gun Accessories | Weapons and Ammunition | Gun Accessories
+1580	1576.0	adproduct	Gun Shows and Auctions	Weapons and Ammunition	Gun Shows and Auctions		Gun Shows and Auctions | Weapons and Ammunition | Gun Shows and Auctions
+1581	1576.0	adproduct	Non-Projectile Weapons	Weapons and Ammunition	Non-Projectile Weapons		Non-Projectile Weapons | Weapons and Ammunition | Non-Projectile Weapons
+1582	1576.0	adproduct	Taster and Stun Guns	Weapons and Ammunition	Taster and Stun Guns		Taster and Stun Guns | Weapons and Ammunition | Taster and Stun Guns

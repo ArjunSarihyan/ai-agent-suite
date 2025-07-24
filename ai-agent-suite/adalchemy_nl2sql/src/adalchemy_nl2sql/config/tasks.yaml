@@ -1,0 +1,41 @@
+sql_query_task:
+  description: >
+    You are given a user's natural language query {topic}. Your job is to:
+    1. Determine the user’s true intent (e.g., topic, entities, categories).
+    2. Match relevant keywords to the `condensed_name_full` column in **each** of the three tables: adproduct, audience, and content.
+    3. Write **individual SQL SELECT statements** for each table that only use the `condensed_name_full` column for filtering.
+    4. Use ILIKE for partial and case-insensitive keyword matches.
+    5. Do not reference any other columns for filtering.
+
+    You must always query all three tables unless the user’s intent explicitly excludes one.
+
+    Example output should follow the format below, adjusting keywords based on the user's query.
+
+  examples:
+    - user_input: "Remote Part-Time Jobs for Freelancers in the Digital World"
+      expected_output: |
+        -- adproduct
+        SELECT unique_id, name, tier_1, tier_2, tier_3
+        FROM adproduct
+        WHERE condensed_name_full ILIKE '%Remote%'
+           OR condensed_name_full ILIKE '%Part-Time%'
+           OR condensed_name_full ILIKE '%Freelancer%'
+           OR condensed_name_full ILIKE '%Digital%';
+
+        -- audience
+        SELECT unique_id, condensed_name_1st_2nd_last_tier, tier_1, tier_2, tier_3, tier_4, tier_5, tier_6
+        FROM audience
+        WHERE condensed_name_full ILIKE '%Remote%'
+           OR condensed_name_full ILIKE '%Part-Time%'
+           OR condensed_name_full ILIKE '%Freelancer%'
+           OR condensed_name_full ILIKE '%Digital%';
+
+        -- content
+        SELECT unique_id, name, taxonomy_type, tier_1, tier_2, tier_3, tier_4, extension, podcast_genres, ctv_genres
+        FROM content
+        WHERE condensed_name_full ILIKE '%Remote%'
+           OR condensed_name_full ILIKE '%Part-Time%'
+           OR condensed_name_full ILIKE '%Freelancer%'
+           OR condensed_name_full ILIKE '%Digital%';
+
+  agent: nl2sql_agent
